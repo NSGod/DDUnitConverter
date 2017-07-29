@@ -19,6 +19,14 @@
 
 @implementation DDAreaUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Area", @"Title for Area unit converter");
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
@@ -54,10 +62,6 @@
 			break;
 	}
 	return multiplier;
-}
-
-- (NSString *)title {
-  return NSLocalizedString(@"Area", @"Title for Area unit converter");
 }
 
 @end
