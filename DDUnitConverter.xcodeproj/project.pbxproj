@@ -33,6 +33,7 @@
 		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* DDUnitConverter.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* DDUnitConverter.1 */; };
+		DD5CEED71F2CD76F004CC331 /* DDUnitDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5CEED61F2CD76F004CC331 /* DDUnitDetails.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +103,8 @@
 		55BBF0FD12A0CF28004DDAB0 /* DDUnitConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUnitConversion.h; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* DDUnitConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DDUnitConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* DDUnitConverter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DDUnitConverter.1; sourceTree = "<group>"; };
+		DD5CEED51F2CD76F004CC331 /* DDUnitDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDUnitDetails.h; sourceTree = "<group>"; };
+		DD5CEED61F2CD76F004CC331 /* DDUnitDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDUnitDetails.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,8 @@
 		55BBF16912A0D67A004DDAB0 /* DDUnitConverter */ = {
 			isa = PBXGroup;
 			children = (
+				DD5CEED51F2CD76F004CC331 /* DDUnitDetails.h */,
+				DD5CEED61F2CD76F004CC331 /* DDUnitDetails.m */,
 				55BBF0FD12A0CF28004DDAB0 /* DDUnitConversion.h */,
 				55B5ABC5129F11F400FBF75C /* DDUnitConverter.h */,
 				55B5ABC6129F11F400FBF75C /* DDUnitConverter.m */,
@@ -281,6 +286,7 @@
 				55B5ABC7129F11F400FBF75C /* DDUnitConverter.m in Sources */,
 				55B5ABCA129F162500FBF75C /* DDLengthUnitConverter.m in Sources */,
 				55B5ABDB129F1C2400FBF75C /* DDAccelerationUnitConverter.m in Sources */,
+				DD5CEED71F2CD76F004CC331 /* DDUnitDetails.m in Sources */,
 				55B5ABF2129F6F7B00FBF75C /* DDAngleUnitConverter.m in Sources */,
 				55B5ABF5129F780E00FBF75C /* NSDecimalNumber+DDConstants.m in Sources */,
 				55B5ABF8129F875800FBF75C /* DDAreaUnitConverter.m in Sources */,

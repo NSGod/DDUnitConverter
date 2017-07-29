@@ -7,12 +7,13 @@
 //
 
 #import "DDUnitConverter.h"
-
+#import "DDUnitConversion.h"
 
 @implementation DDUnitConverter
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
-	[NSException raise:NSInvalidArgumentException format:@"%@ must be overridden", NSStringFromSelector(_cmd)];
+	[NSException raise:NSInvalidArgumentException
+              format:@"%@ must be overridden", NSStringFromSelector(_cmd)];
 	return nil;
 }
 
@@ -32,6 +33,38 @@
 	NSDecimalNumber *valueInTargetUnit = [valueInBaseUnit decimalNumberByDividingBy:convertFromBaseUnit];
 	
 	return valueInTargetUnit;
+}
+
++ (NSArray *)allConverters {
+  return @[[DDUnitConverter angleUnitConverter],
+           [DDUnitConverter lengthUnitConverter],
+           [DDUnitConverter areaUnitConverter],
+           [DDUnitConverter byteUnitConverter],
+           [DDUnitConverter energyUnitConverter],
+           [DDUnitConverter forceUnitConverter],
+           [DDUnitConverter illuminationUnitConverter],
+           [DDUnitConverter magnitudeUnitConverter],
+           [DDUnitConverter powerUnitConverter],
+           [DDUnitConverter pressureUnitConverter],
+           [DDUnitConverter radiationUnitConverter],
+           [DDUnitConverter temperatureUnitConverter],
+           [DDUnitConverter velocityUnitConverter],
+           [DDUnitConverter timeUnitConverter],
+           [DDUnitConverter torqueUnitConverter],
+           [DDUnitConverter volumeUnitConverter],
+           [DDUnitConverter massUnitConverter]];
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  [NSException raise:NSInvalidArgumentException
+              format:@"%@ must be overridden", NSStringFromSelector(_cmd)];
+  return nil;
+}
+
+- (NSString *)title {
+  [NSException raise:NSInvalidArgumentException
+              format:@"%@ must be overridden", NSStringFromSelector(_cmd)];
+  return nil;
 }
 
 @end

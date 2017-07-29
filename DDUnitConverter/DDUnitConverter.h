@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NSUInteger DDUnit;
+#import "DDUnitDetails.h"
 
 @interface DDUnitConverter : NSObject
 
++ (NSArray<DDUnitConverter *> *)allConverters;
+
 - (NSNumber *)convertNumber:(NSNumber *)number fromUnit:(DDUnit)fromUnit toUnit:(DDUnit)toUnit;
+- (NSArray<DDUnitDetails *> *)allUnitsList;
+- (NSString *)title;
 
 @end

@@ -8,7 +8,6 @@
 
 #import "DDLengthUnitConverter.h"
 
-
 @implementation DDUnitConverter (DDLengthUnitConverter)
 
 + (instancetype)lengthUnitConverter {
@@ -60,6 +59,19 @@
 			break;
 	}
 	return multiplier;
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Meter" symbol:@"m" unit:DDLengthUnitMeters],
+           [DDUnitDetails unitWithDisplayName:@"Inch" symbol:@"in" unit:DDLengthUnitInches],
+           [DDUnitDetails unitWithDisplayName:@"Feet" symbol:@"ft" unit:DDLengthUnitFeet],
+           [DDUnitDetails unitWithDisplayName:@"Centimeters" symbol:@"cm" unit:DDLengthUnitCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Kilometers" symbol:@"m" unit:DDLengthUnitKilometers],
+           [DDUnitDetails unitWithDisplayName:@"Miles" symbol:@"m" unit:DDLengthUnitMiles]];
+}
+
+- (NSString *)title {
+  return NSLocalizedString(@"Length", @"Title for Length unit converter");
 }
 
 @end
