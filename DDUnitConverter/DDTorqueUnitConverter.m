@@ -20,6 +20,10 @@
 
 @implementation DDTorqueUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Torque", @"Title for Torque unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

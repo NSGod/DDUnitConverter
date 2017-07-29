@@ -41,4 +41,8 @@
 	return multiplier;
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Acceleration", @"Title for Acceleration unit converter");
+}
+
 @end

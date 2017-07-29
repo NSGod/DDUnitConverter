@@ -19,6 +19,10 @@
 
 @implementation DDInductanceUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Inductance", @"Title for Inductance unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

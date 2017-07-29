@@ -20,6 +20,10 @@
 
 @implementation DDPowerUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Power", @"Title for Power unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

@@ -34,4 +34,8 @@
 	return multiplier;
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Current", @"Title for Current unit converter");
+}
+
 @end

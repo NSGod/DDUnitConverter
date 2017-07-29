@@ -112,4 +112,8 @@
 	return multiplier;
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Byte", @"Title for Byte unit converter");
+}
+
 @end

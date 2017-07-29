@@ -52,4 +52,8 @@
 	return multiplier;
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Angle", @"Title for Angle unit converter");
+}
+
 @end

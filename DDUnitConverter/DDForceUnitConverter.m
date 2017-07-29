@@ -20,6 +20,10 @@
 
 @implementation DDForceUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Force", @"Title for Force unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

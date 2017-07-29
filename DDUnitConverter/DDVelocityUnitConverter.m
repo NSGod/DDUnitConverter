@@ -20,6 +20,10 @@
 
 @implementation DDVelocityUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Velocity", @"Title for Velocity unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

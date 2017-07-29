@@ -19,6 +19,10 @@
 
 @implementation DDVolumeUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Volume", @"Title for Volume unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

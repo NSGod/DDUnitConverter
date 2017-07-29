@@ -19,6 +19,10 @@
 
 @implementation DDTemperatureUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Temperature", @"Title for Temperature unit converter");
+}
+
 - (NSNumber *) convertNumber:(NSNumber *)number fromUnit:(DDUnit)from toUnit:(DDUnit)to {
 	if (from == to) { return number; }
 	

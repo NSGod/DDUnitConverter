@@ -19,6 +19,10 @@
 
 @implementation DDIlluminationUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Illumination", @"Title for Illumination unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

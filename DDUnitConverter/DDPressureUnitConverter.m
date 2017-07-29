@@ -19,6 +19,10 @@
 
 @implementation DDPressureUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Pressure", @"Title for Pressure unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

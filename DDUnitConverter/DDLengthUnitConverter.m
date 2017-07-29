@@ -18,6 +18,10 @@
 
 @implementation DDLengthUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Length", @"Title for Length unit converter");
+}
+
 + (NSDecimalNumber *) multiplierForUnit:(DDLengthUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
@@ -68,10 +72,6 @@
            [DDUnitDetails unitWithDisplayName:@"Centimeters" symbol:@"cm" unit:DDLengthUnitCentimeters],
            [DDUnitDetails unitWithDisplayName:@"Kilometers" symbol:@"m" unit:DDLengthUnitKilometers],
            [DDUnitDetails unitWithDisplayName:@"Miles" symbol:@"m" unit:DDLengthUnitMiles]];
-}
-
-- (NSString *)title {
-  return NSLocalizedString(@"Length", @"Title for Length unit converter");
 }
 
 @end

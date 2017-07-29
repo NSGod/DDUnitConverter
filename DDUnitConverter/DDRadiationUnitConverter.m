@@ -19,6 +19,10 @@
 
 @implementation DDRadiationUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Radiation", @"Title for Radiation unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

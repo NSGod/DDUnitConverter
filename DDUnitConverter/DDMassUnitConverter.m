@@ -19,6 +19,10 @@
 
 @implementation DDMassUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Mass", @"Title for Mass unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

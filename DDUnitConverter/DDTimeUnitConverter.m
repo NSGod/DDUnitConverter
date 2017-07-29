@@ -19,6 +19,10 @@
 
 @implementation DDTimeUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Time", @"Title for Time unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

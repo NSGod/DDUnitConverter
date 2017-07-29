@@ -255,4 +255,8 @@ static NSString *_DDCurrencyNames[] = {
     [[DDCurrencyFetcher sharedCurrencyFetcher] fetchWithCompletionHandler:completionHandler];
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Currency", @"Title for Currency unit converter");
+}
+
 @end

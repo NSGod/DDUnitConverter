@@ -19,6 +19,10 @@
 
 @implementation DDMagnitudeUnitConverter
 
+- (NSString *)title {
+  return NSLocalizedString(@"Magnitude", @"Title for Magnitude unit converter");
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

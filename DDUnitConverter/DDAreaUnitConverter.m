@@ -56,4 +56,8 @@
 	return multiplier;
 }
 
+- (NSString *)title {
+  return NSLocalizedString(@"Area", @"Title for Area unit converter");
+}
+
 @end
