@@ -22,6 +22,19 @@
   return NSLocalizedString(@"Length", @"Title for Length unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Meter" symbol:@"m" unit:DDLengthUnitMeters],
+           [DDUnitDetails unitWithDisplayName:@"Inch" symbol:@"in" unit:DDLengthUnitInches],
+           [DDUnitDetails unitWithDisplayName:@"Feet" symbol:@"ft" unit:DDLengthUnitFeet],
+           [DDUnitDetails unitWithDisplayName:@"Centimeter" symbol:@"cm" unit:DDLengthUnitCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Kilometer" symbol:@"km" unit:DDLengthUnitKilometers],
+           [DDUnitDetails unitWithDisplayName:@"Mile" symbol:@"mile" unit:DDLengthUnitMiles],
+           [DDUnitDetails unitWithDisplayName:@"Milimeter" symbol:@"mm" unit:DDLengthUnitMillimeters],
+           [DDUnitDetails unitWithDisplayName:@"Yard" symbol:@"yard" unit:DDLengthUnitYards],
+           [DDUnitDetails unitWithDisplayName:@"Chain" symbol:@"chain" unit:DDLengthUnitChains],
+           [DDUnitDetails unitWithDisplayName:@"Light years" symbol:@"light year" unit:DDLengthUnitLightyears]];
+}
+
 + (NSDecimalNumber *) multiplierForUnit:(DDLengthUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
@@ -63,15 +76,6 @@
 			break;
 	}
 	return multiplier;
-}
-
-- (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Meter" symbol:@"m" unit:DDLengthUnitMeters],
-           [DDUnitDetails unitWithDisplayName:@"Inch" symbol:@"in" unit:DDLengthUnitInches],
-           [DDUnitDetails unitWithDisplayName:@"Feet" symbol:@"ft" unit:DDLengthUnitFeet],
-           [DDUnitDetails unitWithDisplayName:@"Centimeters" symbol:@"cm" unit:DDLengthUnitCentimeters],
-           [DDUnitDetails unitWithDisplayName:@"Kilometers" symbol:@"m" unit:DDLengthUnitKilometers],
-           [DDUnitDetails unitWithDisplayName:@"Miles" symbol:@"m" unit:DDLengthUnitMiles]];
 }
 
 @end
