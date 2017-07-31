@@ -18,7 +18,13 @@
 typedef NS_ENUM(NSInteger, DDCurrentUnit) {
 	DDCurrentUnitAmperes = 0,
 	DDCurrentUnitElectromagneticUnits,
-	DDCurrentUnitMilliamperes
+	DDCurrentUnitMilliamperes,
+  DDCurrentUnitKiloamperes,
+  DDCurrentUnitMicroamperes,
+  DDCurrentUnitNanoamperes,
+  DDCurrentUnitStatamperes,
+  DDCurrentUnitAbamperes,
+  DDCurrentUnitColomboPerSeconds
 };
 
 @interface DDCurrentUnitConverter : DDUnitConverter

@@ -19,15 +19,38 @@
 
 @implementation DDCurrentUnitConverter
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Ampere" symbol:@"A" unit:DDCurrentUnitAmperes],
+           [DDUnitDetails unitWithDisplayName:@"ElectromagneticUnit" symbol:@"" unit:DDCurrentUnitElectromagneticUnits],
+           [DDUnitDetails unitWithDisplayName:@"Kiloampere" symbol:@"kA" unit:DDCurrentUnitKiloamperes],
+           [DDUnitDetails unitWithDisplayName:@"Milliampere" symbol:@"mA" unit:DDCurrentUnitMilliamperes],
+           [DDUnitDetails unitWithDisplayName:@"Microampere" symbol:@"μA" unit:DDCurrentUnitMicroamperes],
+           [DDUnitDetails unitWithDisplayName:@"Nanoampere" symbol:@"nA" unit:DDCurrentUnitNanoamperes],
+           [DDUnitDetails unitWithDisplayName:@"Statampere" symbol:@"statA" unit:DDCurrentUnitStatamperes],
+           [DDUnitDetails unitWithDisplayName:@"Abampere" symbol:@"abA" unit:DDCurrentUnitAbamperes],
+           [DDUnitDetails unitWithDisplayName:@"Colombo Per Second" symbol:@"" unit:DDCurrentUnitColomboPerSeconds]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
 		case DDCurrentUnitAmperes:
+    case DDCurrentUnitColomboPerSeconds:
 			break;
 		case DDCurrentUnitElectromagneticUnits:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:1 isNegative:NO]; break;
 		case DDCurrentUnitMilliamperes:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-3 isNegative:NO]; break;
+    case DDCurrentUnitKiloamperes:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
+    case DDCurrentUnitMicroamperes:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-6 isNegative:NO]; break;
+    case DDCurrentUnitNanoamperes:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-9 isNegative:NO]; break;
+    case DDCurrentUnitStatamperes:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:3 exponent:-9 isNegative:NO]; break;
+    case DDCurrentUnitAbamperes:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:1 isNegative:NO]; break;
 		default:
 			break;
 	}
