@@ -1,5 +1,5 @@
+xcuserdata
+*.xccheckout
+Pods
+DerivedSources
 build
-**/*.pbxuser
-**/*.perspective*
-**/*.mode*
-.DS_Store
