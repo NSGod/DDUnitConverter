@@ -19,6 +19,24 @@
 
 @implementation DDByteUnitConverter
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Bit" symbol:@"b" unit:DDByteUnitBit],
+           [DDUnitDetails unitWithDisplayName:@"Crumb" symbol:@"crumb" unit:DDByteUnitCrumb],
+           [DDUnitDetails unitWithDisplayName:@"Nibble" symbol:@"nibble" unit:DDByteUnitNibble],
+           [DDUnitDetails unitWithDisplayName:@"Byte" symbol:@"B" unit:DDByteUnitByte],
+           [DDUnitDetails unitWithDisplayName:@"Decabyte" symbol:@"DB" unit:DDByteUnitDecabyte],
+           [DDUnitDetails unitWithDisplayName:@"Hectobyte" symbol:@"HB" unit:DDByteUnitHectobyte],
+           [DDUnitDetails unitWithDisplayName:@"Kilobyte" symbol:@"KB" unit:DDByteUnitKilobyte],
+           [DDUnitDetails unitWithDisplayName:@"Megabyte" symbol:@"MB" unit:DDByteUnitMegabyte],
+           [DDUnitDetails unitWithDisplayName:@"Gigabyte" symbol:@"GB" unit:DDByteUnitGigabyte],
+           [DDUnitDetails unitWithDisplayName:@"Terabyte" symbol:@"TB" unit:DDByteUnitTerabyte],
+           [DDUnitDetails unitWithDisplayName:@"Petabyte" symbol:@"PB" unit:DDByteUnitPetabyte],
+           [DDUnitDetails unitWithDisplayName:@"Exabyte" symbol:@"EB" unit:DDByteUnitExabyte],
+           [DDUnitDetails unitWithDisplayName:@"Zettabyte" symbol:@"ZB" unit:DDByteUnitZettabyte],
+           [DDUnitDetails unitWithDisplayName:@"Yottabyte" symbol:@"YB" unit:DDByteUnitYottabyte],
+           [DDUnitDetails unitWithDisplayName:@"Kibibyte" symbol:@"Ki" unit:DDByteUnitKibibyte]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

@@ -20,6 +20,21 @@
 
 @implementation DDAngleUnitConverter
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Circle" symbol:@"circle" unit:DDAngleUnitCircles],
+           [DDUnitDetails unitWithDisplayName:@"Degree" symbol:@"°" unit:DDAngleUnitDegrees],
+           [DDUnitDetails unitWithDisplayName:@"Gon" symbol:@"g" unit:DDAngleUnitGons],
+           [DDUnitDetails unitWithDisplayName:@"Grade/Gradian" symbol:@"g" unit:DDAngleUnitGrades],
+           [DDUnitDetails unitWithDisplayName:@"Minute" symbol:@"min" unit:DDAngleUnitMinutes],
+           [DDUnitDetails unitWithDisplayName:@"Milliradian" symbol:@"mil/mrad" unit:DDAngleUnitMils],
+           [DDUnitDetails unitWithDisplayName:@"Nautical Rhumb" symbol:@"" unit:DDAngleUnitNauticalRhumbs],
+           [DDUnitDetails unitWithDisplayName:@"Quadrant" symbol:@"quad" unit:DDAngleUnitQuadrants],
+           [DDUnitDetails unitWithDisplayName:@"Radian" symbol:@"rad" unit:DDAngleUnitRadians],
+           [DDUnitDetails unitWithDisplayName:@"Revolution" symbol:@"rev" unit:DDAngleUnitRevolutions],
+           [DDUnitDetails unitWithDisplayName:@"Second" symbol:@"sec" unit:DDAngleUnitSeconds],
+           [DDUnitDetails unitWithDisplayName:@"Turn" symbol:@"tr" unit:DDAngleUnitTurns]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
