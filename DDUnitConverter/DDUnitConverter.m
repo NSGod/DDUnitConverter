@@ -40,6 +40,7 @@
            [DDUnitConverter lengthUnitConverter],
            [DDUnitConverter areaUnitConverter],
            [DDUnitConverter byteUnitConverter],
+           [DDUnitConverter currentUnitConverter],
            [DDUnitConverter energyUnitConverter],
            [DDUnitConverter forceUnitConverter],
            [DDUnitConverter illuminationUnitConverter],
