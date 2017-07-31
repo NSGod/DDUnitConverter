@@ -73,7 +73,7 @@
     case DDForceUnitTonOfForce:
       multiplier = [NSDecimalNumber decimalNumberWithMantissa:8896443231 exponent:-6 isNegative:NO]; break;
     case DDForceUnitOunceForce:
-      multiplier = [NSDecimalNumber decimalNumberWithMantissa:278014 exponent:6 isNegative:NO]; break;
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:278014 exponent:-6 isNegative:NO]; break;
 		default:
 			break;
 	}
