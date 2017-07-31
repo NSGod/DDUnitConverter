@@ -24,7 +24,21 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres]];
+  return @[[DDUnitDetails unitWithDisplayName:@"Hectare" symbol:@"ha" unit:DDAreaUnitHectares],
+           [DDUnitDetails unitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres],
+           [DDUnitDetails unitWithDisplayName:@"Are" symbol:@"a" unit:DDAreaUnitAres],
+           [DDUnitDetails unitWithDisplayName:@"Barn" symbol:@"b" unit:DDAreaUnitBarns],
+           [DDUnitDetails unitWithDisplayName:@"Rood" symbol:@"rood" unit:DDAreaUnitRoods],
+           [DDUnitDetails unitWithDisplayName:@"Square Kilometer" symbol:@"km²" unit:DDAreaUnitSquareKilometers],
+           [DDUnitDetails unitWithDisplayName:@"Square Meter" symbol:@"m²" unit:DDAreaUnitSquareMeters],
+           [DDUnitDetails unitWithDisplayName:@"Square Decimeter" symbol:@"dm²" unit:DDAreaUnitSquareDecimeters],
+           [DDUnitDetails unitWithDisplayName:@"Square Centimeter" symbol:@"cm²" unit:DDAreaUnitSquareCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Square Milimeter" symbol:@"mm²" unit:DDAreaUnitSquareMillimeters],
+           [DDUnitDetails unitWithDisplayName:@"Square Mile" symbol:@"mile²" unit:DDAreaUnitSquareMiles],
+           [DDUnitDetails unitWithDisplayName:@"Square Yard" symbol:@"yd²" unit:DDAreaUnitSquareYards],
+           [DDUnitDetails unitWithDisplayName:@"Square Feet" symbol:@"ft²" unit:DDAreaUnitSquareFeet],
+           [DDUnitDetails unitWithDisplayName:@"Square Inch" symbol:@"in²" unit:DDAreaUnitSquareInches],
+           [DDUnitDetails unitWithDisplayName:@"Square Rod" symbol:@"rod²" unit:DDAreaUntiSquareRods]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
@@ -32,6 +46,8 @@
 	switch (unit) {
 		case DDAreaUnitAcres:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:40468564224 exponent:-7 isNegative:NO]; break;
+    case DDAreaUnitAres:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-2 isNegative:NO]; break;
 		case DDAreaUnitBarns:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-28 isNegative:NO]; break;
 		case DDAreaUnitHectares:

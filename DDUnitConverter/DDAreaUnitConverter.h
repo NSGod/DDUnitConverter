@@ -17,6 +17,7 @@
 
 typedef NS_ENUM(NSInteger, DDAreaUnit) {
 	DDAreaUnitAcres = 0,
+  DDAreaUnitAres,
 	DDAreaUnitBarns,
 	DDAreaUnitHectares,
 	DDAreaUnitRoods,
