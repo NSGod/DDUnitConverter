@@ -48,7 +48,7 @@
     case DDCurrentUnitNanoamperes:
       multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-9 isNegative:NO]; break;
     case DDCurrentUnitStatamperes:
-      multiplier = [NSDecimalNumber decimalNumberWithMantissa:3 exponent:-9 isNegative:NO]; break;
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:333333333 exponent:-18 isNegative:NO]; break;
     case DDCurrentUnitAbamperes:
       multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:1 isNegative:NO]; break;
 		default:

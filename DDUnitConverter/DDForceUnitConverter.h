@@ -16,12 +16,20 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDForceUnit) {
-    DDForceUnitDynes = 0,
+  DDForceUnitDynes = 0,
 	DDForceUnitKilogramForces,
 	DDForceUnitNewtons,
 	DDForceUnitPoundals,
 	DDForceUnitPoundForces,
-	DDForceUnitSthenes
+	DDForceUnitSthenes,
+  DDForceUnitAtomicWeight,
+  DDForceUnitGramForce,
+  DDForceUnitKiloNewtons,
+  DDForceUnitMiliNewtons,
+  DDForceUnitKip,
+  DDForceUnitMicroNewtons,
+  DDForceUnitTonOfForce,
+  DDForceUnitOunceForce,
 };
 
 @interface DDForceUnitConverter : DDUnitConverter
