@@ -34,7 +34,12 @@
            [DDUnitDetails unitWithDisplayName:@"Exabyte" symbol:@"EB" unit:DDByteUnitExabyte],
            [DDUnitDetails unitWithDisplayName:@"Zettabyte" symbol:@"ZB" unit:DDByteUnitZettabyte],
            [DDUnitDetails unitWithDisplayName:@"Yottabyte" symbol:@"YB" unit:DDByteUnitYottabyte],
-           [DDUnitDetails unitWithDisplayName:@"Kibibyte" symbol:@"Ki" unit:DDByteUnitKibibyte]];
+           [DDUnitDetails unitWithDisplayName:@"Kibibyte" symbol:@"Ki" unit:DDByteUnitKibibyte],
+           [DDUnitDetails unitWithDisplayName:@"Mebibyte" symbol:@"Mi" unit:DDByteUnitMebibyte],
+           [DDUnitDetails unitWithDisplayName:@"Gibibyte" symbol:@"Gi" unit:DDByteUnitGibibyte],
+           [DDUnitDetails unitWithDisplayName:@"Tebibyte" symbol:@"Ti" unit:DDByteUnitTebibyte],
+           [DDUnitDetails unitWithDisplayName:@"Pebibyte" symbol:@"Pi" unit:DDByteUnitPebibyte],
+           [DDUnitDetails unitWithDisplayName:@"Exbibyte" symbol:@"Ei" unit:DDByteUnitExbibyte]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
