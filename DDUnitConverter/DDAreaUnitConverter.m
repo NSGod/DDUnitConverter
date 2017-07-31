@@ -47,7 +47,7 @@
 		case DDAreaUnitAcres:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:40468564224 exponent:-7 isNegative:NO]; break;
     case DDAreaUnitAres:
-      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-2 isNegative:NO]; break;
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:2 isNegative:NO]; break;
 		case DDAreaUnitBarns:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-28 isNegative:NO]; break;
 		case DDAreaUnitHectares:
