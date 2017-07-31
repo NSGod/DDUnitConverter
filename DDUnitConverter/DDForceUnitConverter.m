@@ -32,7 +32,6 @@
            [DDUnitDetails unitWithDisplayName:@"Newton" symbol:@"N" unit:DDForceUnitNewtons],
            [DDUnitDetails unitWithDisplayName:@"Kilonewton" symbol:@"kN" unit:DDForceUnitKiloNewtons],
            [DDUnitDetails unitWithDisplayName:@"Poundal" symbol:@"pdl" unit:DDForceUnitPoundals],
-           [DDUnitDetails unitWithDisplayName:@"Gram Force" symbol:@"gf" unit:DDForceUnitGramForce],
            [DDUnitDetails unitWithDisplayName:@"Pound Force" symbol:@"lbf" unit:DDForceUnitPoundForces],
            [DDUnitDetails unitWithDisplayName:@"Sthene" symbol:@"" unit:DDForceUnitSthenes],
            [DDUnitDetails unitWithDisplayName:@"Millinewton" symbol:@"mN" unit:DDForceUnitMiliNewtons],
@@ -60,8 +59,6 @@
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
     case DDForceUnitAtomicWeight:
       multiplier = [NSDecimalNumber decimalNumberWithMantissa:16283353926 exponent:-36 isNegative:NO]; break;
-    case DDForceUnitGramForce:
-      multiplier = [NSDecimalNumber decimalNumberWithMantissa:9807 exponent:-6 isNegative:NO]; break;
     case DDForceUnitKiloNewtons:
       multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
     case DDForceUnitMiliNewtons:

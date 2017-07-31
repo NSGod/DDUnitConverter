@@ -23,7 +23,6 @@ typedef NS_ENUM(NSInteger, DDForceUnit) {
 	DDForceUnitPoundForces,
 	DDForceUnitSthenes,
   DDForceUnitAtomicWeight,
-  DDForceUnitGramForce,
   DDForceUnitKiloNewtons,
   DDForceUnitMiliNewtons,
   DDForceUnitKip,
