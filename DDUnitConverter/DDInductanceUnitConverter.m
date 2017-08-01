@@ -23,6 +23,14 @@
   return NSLocalizedString(@"Inductance", @"Title for Inductance unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Electromagnetic Unit" symbol:@"" unit:DDInductanceUnitElectromagneticUnits],
+           [DDUnitDetails unitWithDisplayName:@"Electrostatic Units" symbol:@"" unit:DDInductanceUnitElectrostaticUnits],
+           [DDUnitDetails unitWithDisplayName:@"Henrys" symbol:@"H" unit:DDInductanceUnitHenrys],
+           [DDUnitDetails unitWithDisplayName:@"Millihenrys" symbol:@"mH" unit:DDInductanceUnitMillihenrys],
+           [DDUnitDetails unitWithDisplayName:@"Microhenrys" symbol:@"μH" unit:DDInductanceUnitMicrohenrys]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

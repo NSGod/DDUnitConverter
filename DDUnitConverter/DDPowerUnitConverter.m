@@ -24,6 +24,23 @@
   return NSLocalizedString(@"Power", @"Title for Power unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Calorie Per Second" symbol:@"cal/s" unit:DDPowerUnitCaloriePerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Foot Pound Force Per Second" symbol:@"lbf/s" unit:DDPowerUnitFootPoundForcesPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Horsepower" symbol:@"hp" unit:DDPowerUnitHorsepower],
+           [DDUnitDetails unitWithDisplayName:@"Joules Per Second" symbol:@"J/s" unit:DDPowerUnitJoulesPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Kilogram Force Meter Per Second"
+                                       symbol:@"kgf/s"
+                                         unit:DDPowerUnitKilogramForceMetersPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Kilowatt" symbol:@"" unit:DDPowerUnitKilowatts],
+           [DDUnitDetails unitWithDisplayName:@"Lusec" symbol:@"" unit:DDPowerUnitLusec],
+           [DDUnitDetails unitWithDisplayName:@"Megawatt" symbol:@"" unit:DDPowerUnitMegawatts],
+           [DDUnitDetails unitWithDisplayName:@"Metric Horsepower" symbol:@"" unit:DDPowerUnitMetricHorsepower],
+           [DDUnitDetails unitWithDisplayName:@"Microwatt" symbol:@"" unit:DDPowerUnitMicrowatts],
+           [DDUnitDetails unitWithDisplayName:@"Milliwatt" symbol:@"" unit:DDPowerUnitMilliwatts],
+           [DDUnitDetails unitWithDisplayName:@"Watt" symbol:@"" unit:DDPowerUnitWatts]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
@@ -38,8 +55,18 @@
 			break;
 		case DDPowerUnitKilogramForceMetersPerSecond:
 			multiplier = [NSDecimalNumber gConstant_dd]; break;
-        case DDPowerUnitKilowatts:
-            multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
+    case DDPowerUnitKilowatts:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
+    case DDPowerUnitMegawatts:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:6 isNegative:NO]; break;
+    case DDPowerUnitMilliwatts:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-2 isNegative:NO]; break;
+    case DDPowerUnitMicrowatts:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-6 isNegative:NO]; break;
+    case DDPowerUnitCaloriePerSecond:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:41868 exponent:-4 isNegative:NO]; break;
+    case DDPowerUnitLusec:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:133 exponent:-6 isNegative:NO]; break;
 		default:
 			break;
 	}

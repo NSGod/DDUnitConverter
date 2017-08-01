@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDMagnitudeUnit) {
-    DDMagnitudeUnitYocto = 0,
+  DDMagnitudeUnitYocto = 0,
 	DDMagnitudeUnitZepto,
 	DDMagnitudeUnitAtto,
 	DDMagnitudeUnitFemto,

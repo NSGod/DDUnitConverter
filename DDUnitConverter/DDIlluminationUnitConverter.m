@@ -19,6 +19,17 @@
 
 @implementation DDIlluminationUnitConverter
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Foot Candle" symbol:@"fc" unit:DDIlluminationUnitFootCandles],
+           [DDUnitDetails unitWithDisplayName:@"Lumen Per Square Meter" symbol:@"lm/m²" unit:DDIlluminationUnitLumensPerSquareMeter],
+           [DDUnitDetails unitWithDisplayName:@"Lumen Per Square Foot" symbol:@"lm/ft²" unit:DDIlluminationUnitLumensPerSquareFoot],
+           [DDUnitDetails unitWithDisplayName:@"Lumen Per Square Centimeter" symbol:@"lm/cm²" unit:DDIlluminationUnitLumensPerSquareCentimeter],
+           [DDUnitDetails unitWithDisplayName:@"Nox" symbol:@"nox" unit:DDIlluminationUnitNox],
+           [DDUnitDetails unitWithDisplayName:@"Phot" symbol:@"ph" unit:DDIlluminationUnitPhots],
+           [DDUnitDetails unitWithDisplayName:@"Day Light" symbol:@"" unit:DDIlluminationUnitClearDaySunIllumination],
+           [DDUnitDetails unitWithDisplayName:@"Lux" symbol:@"lx" unit:DDIlluminationUnitLux]];
+}
+
 - (NSString *)title {
   return NSLocalizedString(@"Illumination", @"Title for Illumination unit converter");
 }

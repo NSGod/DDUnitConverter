@@ -24,15 +24,22 @@
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
   return @[[DDUnitDetails unitWithDisplayName:@"Meter" symbol:@"m" unit:DDLengthUnitMeters],
-           [DDUnitDetails unitWithDisplayName:@"Inch" symbol:@"in" unit:DDLengthUnitInches],
-           [DDUnitDetails unitWithDisplayName:@"Feet" symbol:@"ft" unit:DDLengthUnitFeet],
            [DDUnitDetails unitWithDisplayName:@"Centimeter" symbol:@"cm" unit:DDLengthUnitCentimeters],
            [DDUnitDetails unitWithDisplayName:@"Kilometer" symbol:@"km" unit:DDLengthUnitKilometers],
+           [DDUnitDetails unitWithDisplayName:@"Inch" symbol:@"in" unit:DDLengthUnitInches],
+           [DDUnitDetails unitWithDisplayName:@"Feet" symbol:@"ft" unit:DDLengthUnitFeet],
            [DDUnitDetails unitWithDisplayName:@"Mile" symbol:@"mile" unit:DDLengthUnitMiles],
            [DDUnitDetails unitWithDisplayName:@"Milimeter" symbol:@"mm" unit:DDLengthUnitMillimeters],
            [DDUnitDetails unitWithDisplayName:@"Yard" symbol:@"yard" unit:DDLengthUnitYards],
+           [DDUnitDetails unitWithDisplayName:@"Astronomical Unit" symbol:@"au" unit:DDLengthUnitAstronomicUnits],
+           [DDUnitDetails unitWithDisplayName:@"Nautical Mile" symbol:@"nm | nmi" unit:DDLengthUnitInternationalNauticalMiles],
+           [DDUnitDetails unitWithDisplayName:@"UK Nautical Mile" symbol:@"UK nm | UK nmi" unit:DDLengthUnitUKNauticalMiles],
+           [DDUnitDetails unitWithDisplayName:@"Parsec" symbol:@"pc" unit:DDLengthUnitParsecs],
+           [DDUnitDetails unitWithDisplayName:@"Angstrom" symbol:@"Å" unit:DDLengthUnitAngstroms],
+           [DDUnitDetails unitWithDisplayName:@"Fathom" symbol:@"fathom" unit:DDLengthUnitFathoms],
+           [DDUnitDetails unitWithDisplayName:@"Furlong" symbol:@"furlong" unit:DDLengthUnitFurlongs],
            [DDUnitDetails unitWithDisplayName:@"Chain" symbol:@"chain" unit:DDLengthUnitChains],
-           [DDUnitDetails unitWithDisplayName:@"Light years" symbol:@"light year" unit:DDLengthUnitLightyears]];
+           [DDUnitDetails unitWithDisplayName:@"Light year" symbol:@"light year" unit:DDLengthUnitLightyears]];
 }
 
 + (NSDecimalNumber *) multiplierForUnit:(DDLengthUnit)unit {

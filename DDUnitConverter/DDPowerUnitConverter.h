@@ -16,13 +16,18 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDPowerUnit) {
-    DDPowerUnitFootPoundForcesPerSecond = 0,
+  DDPowerUnitFootPoundForcesPerSecond = 0,
 	DDPowerUnitHorsepower,
 	DDPowerUnitMetricHorsepower,
 	DDPowerUnitJoulesPerSecond,
 	DDPowerUnitKilogramForceMetersPerSecond,
 	DDPowerUnitWatts,
-    DDPowerUnitKilowatts
+  DDPowerUnitKilowatts,
+  DDPowerUnitMegawatts,
+  DDPowerUnitMilliwatts,
+  DDPowerUnitMicrowatts,
+  DDPowerUnitCaloriePerSecond,
+  DDPowerUnitLusec,
 };
 
 @interface DDPowerUnitConverter : DDUnitConverter

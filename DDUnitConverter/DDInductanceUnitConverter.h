@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDInductanceUnit) {
-    DDInductanceUnitElectromagneticUnits = 0,
+  DDInductanceUnitElectromagneticUnits = 0,
 	DDInductanceUnitElectrostaticUnits,
 	DDInductanceUnitHenrys,
 	DDInductanceUnitMillihenrys,

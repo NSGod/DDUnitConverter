@@ -20,7 +20,34 @@
 @implementation DDMassUnitConverter
 
 - (NSString *)title {
-  return NSLocalizedString(@"Mass", @"Title for Mass unit converter");
+  return NSLocalizedString(@"Weight", @"Title for Mass unit converter");
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Atomic Mass Unit" symbol:@"u" unit:DDMassUnitAtomicMassUnits],
+           [DDUnitDetails unitWithDisplayName:@"Dalton" symbol:@"Da" unit:DDMassUnitDaltons],
+           [DDUnitDetails unitWithDisplayName:@"Drachm" symbol:@"" unit:DDMassUnitDrachms],
+           [DDUnitDetails unitWithDisplayName:@"Dram" symbol:@"ʒ | dr" unit:DDMassUnitDrams],
+           [DDUnitDetails unitWithDisplayName:@"Firkin" symbol:@"" unit:DDMassUnitFirkins],
+           [DDUnitDetails unitWithDisplayName:@"Grain" symbol:@"gr" unit:DDMassUnitGrains],
+           [DDUnitDetails unitWithDisplayName:@"Gram" symbol:@"g" unit:DDMassUnitGrams],
+           [DDUnitDetails unitWithDisplayName:@"Hundred Weight" symbol:@"cwt" unit:DDMassUnitHundredWeights],
+           [DDUnitDetails unitWithDisplayName:@"Hundred Weight (Short)" symbol:@"" unit:DDMassUnitShortHundredWeights],
+           [DDUnitDetails unitWithDisplayName:@"Kilogram" symbol:@"kg" unit:DDMassUnitKilograms],
+           [DDUnitDetails unitWithDisplayName:@"Milligram" symbol:@"mg" unit:DDMassUnitMilligrams],
+           [DDUnitDetails unitWithDisplayName:@"Ounce (Troy)" symbol:@"ozt" unit:DDMassUnitTroyOunces],
+           [DDUnitDetails unitWithDisplayName:@"Ounce (US)" symbol:@"oz" unit:DDMassUnitUSOunces],
+           [DDUnitDetails unitWithDisplayName:@"Penny Weight" symbol:@"dwt | denarius weight" unit:DDMassUnitPennyweights],
+           [DDUnitDetails unitWithDisplayName:@"Pound (Troy)" symbol:@"" unit:DDMassUnitTroyPounds],
+           [DDUnitDetails unitWithDisplayName:@"Pound (US)" symbol:@"lb" unit:DDMassUnitUSPounds],
+           [DDUnitDetails unitWithDisplayName:@"Quintal" symbol:@"" unit:DDMassUnitQuintal],
+           [DDUnitDetails unitWithDisplayName:@"Quarter" symbol:@"" unit:DDMassUnitQuarters],
+           [DDUnitDetails unitWithDisplayName:@"Scruple" symbol:@"" unit:DDMassUnitScruples],
+           [DDUnitDetails unitWithDisplayName:@"Slug" symbol:@"slug" unit:DDMassUnitSlugs],
+           [DDUnitDetails unitWithDisplayName:@"Stone" symbol:@"st" unit:DDMassUnitStones],
+           [DDUnitDetails unitWithDisplayName:@"Ton (US)" symbol:@"Short Ton | weight ton | gross ton" unit:DDMassUnitShortTons],
+           [DDUnitDetails unitWithDisplayName:@"Ton (UK)" symbol:@"long ton | net ton" unit:DDMassUnitUKTons],
+           [DDUnitDetails unitWithDisplayName:@"Tonne | Metric Ton" symbol:@"t" unit:DDMassUnitTonnes]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
@@ -52,6 +79,8 @@
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:373242 exponent:-6 isNegative:NO]; break;
 		case DDMassUnitUSPounds:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:45359237 exponent:-8 isNegative:NO]; break;
+    case DDMassUnitQuintal:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:2 isNegative:NO]; break;
 		case DDMassUnitQuarters:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:127006 exponent:-4 isNegative:NO]; break;
 		case DDMassUnitScruples:
@@ -70,6 +99,8 @@
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:3 isNegative:NO]; break;
 		case DDMassUnitFirkins:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:408233133 exponent:-7 isNegative:NO]; break;
+    case DDMassUnitDaltons:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:16605 exponent:-31 isNegative:NO]; break;
 		default:
 			break;
 	}

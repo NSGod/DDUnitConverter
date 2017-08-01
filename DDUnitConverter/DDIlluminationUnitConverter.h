@@ -16,14 +16,14 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDIlluminationUnit) {
-    DDIlluminationUnitFootCandles = 0,
+  DDIlluminationUnitFootCandles = 0,
 	DDIlluminationUnitLumensPerSquareCentimeter,
 	DDIlluminationUnitLumensPerSquareFoot,
 	DDIlluminationUnitLumensPerSquareMeter,
 	DDIlluminationUnitNox,
 	DDIlluminationUnitPhots,
 	DDIlluminationUnitClearDaySunIllumination,
-    DDIlluminationUnitLux = DDIlluminationUnitLumensPerSquareMeter
+  DDIlluminationUnitLux = DDIlluminationUnitLumensPerSquareMeter
 };
 
 @interface DDIlluminationUnitConverter : DDUnitConverter

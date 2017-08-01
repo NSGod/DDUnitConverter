@@ -16,8 +16,9 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDRadiationUnit) {
-    DDRadiationUnitBecquerels = 0,
-	DDRadiationUnitCuries
+  DDRadiationUnitBecquerels = 0,
+	DDRadiationUnitCuries,
+  DDRadiationUnitRutherfords
 };
 
 @interface DDRadiationUnitConverter : DDUnitConverter

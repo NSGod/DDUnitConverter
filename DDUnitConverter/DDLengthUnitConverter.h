@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDLengthUnit) {
-    DDLengthUnitAstronomicUnits = 0,
+  DDLengthUnitAstronomicUnits = 0,
 	DDLengthUnitCentimeters,
 	DDLengthUnitChains,
 	DDLengthUnitInches,

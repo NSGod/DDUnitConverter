@@ -16,13 +16,15 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDPressureUnit) {
-    DDPressureUnitAtmospheres = 0,
+  DDPressureUnitAtmospheres = 0,
+  DDPressureUnitBarie,
 	DDPressureUnitBars,
 	DDPressureUnitInchesOfMercury,
 	DDPressureUnitInchesOfWater,
 	DDPressureUnitMillimetersOfMercury,
 	DDPressureUnitNewtonsPerSquareMeter,
 	DDPressureUnitPascals,
+  DDPressureUnitPieze,
 	DDPressureUnitPoundForcesPerSquareFoot,
 	DDPressureUnitPoundForcesPerSquareInch,
 	DDPressureUnitTorrs

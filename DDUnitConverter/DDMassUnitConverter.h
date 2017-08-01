@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDMassUnit) {
-    DDMassUnitAtomicMassUnits = 0,
+  DDMassUnitAtomicMassUnits = 0,
 	DDMassUnitDrachms,
 	DDMassUnitDrams,
 	DDMassUnitGrains,
@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, DDMassUnit) {
 	DDMassUnitPennyweights,
 	DDMassUnitTroyPounds,
 	DDMassUnitUSPounds,
+  DDMassUnitQuintal,
 	DDMassUnitQuarters,
 	DDMassUnitScruples,
 	DDMassUnitShortHundredWeights,
@@ -37,7 +38,8 @@ typedef NS_ENUM(NSInteger, DDMassUnit) {
 	DDMassUnitStones,
 	DDMassUnitUKTons,
 	DDMassUnitTonnes,
-	DDMassUnitFirkins
+  DDMassUnitFirkins,
+  DDMassUnitDaltons
 };
 
 @interface DDMassUnitConverter : DDUnitConverter

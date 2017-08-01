@@ -23,6 +23,30 @@
   return NSLocalizedString(@"Magnitude", @"Title for Magnitude unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Yocto" symbol:@"" unit:DDMagnitudeUnitYocto],
+           [DDUnitDetails unitWithDisplayName:@"Zepto" symbol:@"" unit:DDMagnitudeUnitZepto],
+           [DDUnitDetails unitWithDisplayName:@"Atto" symbol:@"" unit:DDMagnitudeUnitAtto],
+           [DDUnitDetails unitWithDisplayName:@"Femto" symbol:@"" unit:DDMagnitudeUnitFemto],
+           [DDUnitDetails unitWithDisplayName:@"Pico" symbol:@"" unit:DDMagnitudeUnitPico],
+           [DDUnitDetails unitWithDisplayName:@"Nano" symbol:@"" unit:DDMagnitudeUnitNano],
+           [DDUnitDetails unitWithDisplayName:@"Micro" symbol:@"" unit:DDMagnitudeUnitMicro],
+           [DDUnitDetails unitWithDisplayName:@"Milli" symbol:@"" unit:DDMagnitudeUnitMilli],
+           [DDUnitDetails unitWithDisplayName:@"Centi" symbol:@"" unit:DDMagnitudeUnitCenti],
+           [DDUnitDetails unitWithDisplayName:@"Deci" symbol:@"" unit:DDMagnitudeUnitDeci],
+           [DDUnitDetails unitWithDisplayName:@"Normal" symbol:@"" unit:DDMagnitudeUnitNormal],
+           [DDUnitDetails unitWithDisplayName:@"Deka" symbol:@"" unit:DDMagnitudeUnitDeka],
+           [DDUnitDetails unitWithDisplayName:@"Hecto" symbol:@"" unit:DDMagnitudeUnitHecto],
+           [DDUnitDetails unitWithDisplayName:@"Kilo" symbol:@"" unit:DDMagnitudeUnitKilo],
+           [DDUnitDetails unitWithDisplayName:@"Mega" symbol:@"" unit:DDMagnitudeUnitMega],
+           [DDUnitDetails unitWithDisplayName:@"Giga" symbol:@"" unit:DDMagnitudeUnitGiga],
+           [DDUnitDetails unitWithDisplayName:@"Tera" symbol:@"" unit:DDMagnitudeUnitTera],
+           [DDUnitDetails unitWithDisplayName:@"Peta" symbol:@"" unit:DDMagnitudeUnitPeta],
+           [DDUnitDetails unitWithDisplayName:@"Exa" symbol:@"" unit:DDMagnitudeUnitExa],
+           [DDUnitDetails unitWithDisplayName:@"Zetta" symbol:@"" unit:DDMagnitudeUnitZetta],
+           [DDUnitDetails unitWithDisplayName:@"Yotta" symbol:@"" unit:DDMagnitudeUnitYotta]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
