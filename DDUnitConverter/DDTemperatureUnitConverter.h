@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDTemperatureUnit) {
-    DDTemperatureUnitCelcius = 0,
+  DDTemperatureUnitCelcius = 0,
 	DDTemperatureUnitFarenheit,
 	DDTemperatureUnitKelvin,
 	DDTemperatureUnitReaumur,

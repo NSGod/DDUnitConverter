@@ -23,6 +23,14 @@
   return NSLocalizedString(@"Temperature", @"Title for Temperature unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Celcius" symbol:@"°C" unit:DDTemperatureUnitCelcius],
+           [DDUnitDetails unitWithDisplayName:@"Farenheit" symbol:@"°F" unit:DDTemperatureUnitFarenheit],
+           [DDUnitDetails unitWithDisplayName:@"Kelvin" symbol:@"K" unit:DDTemperatureUnitKelvin],
+           [DDUnitDetails unitWithDisplayName:@"Reaumur" symbol:@"°Ré | °Re | °r" unit:DDTemperatureUnitReaumur],
+           [DDUnitDetails unitWithDisplayName:@"Rankine" symbol:@"°R" unit:DDTemperatureUnitRankine]];
+}
+
 - (NSNumber *) convertNumber:(NSNumber *)number fromUnit:(DDUnit)from toUnit:(DDUnit)to {
 	if (from == to) { return number; }
 	
