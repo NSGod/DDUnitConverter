@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDTimeUnit) {
-    DDTimeUnitBlinks = 0,
+  DDTimeUnitBlinks = 0,
 	DDTimeUnitCenturies,
 	DDTimeUnitCesium133,
 	DDTimeUnitDays,
