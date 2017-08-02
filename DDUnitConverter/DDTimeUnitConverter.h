@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, DDTimeUnit) {
 	DDTimeUnitMinutes,
 	DDTimeUnitMonths,
 	DDTimeUnitNanoseconds,
+  DDTimeUnitPicoseconds,
 	DDTimeUnitSeconds,
 	DDTimeUnitTicks,
 	DDTimeUnitWeeks,

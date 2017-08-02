@@ -23,6 +23,35 @@
   return NSLocalizedString(@"Time", @"Title for Time unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Blink" symbol:@"" unit:DDTimeUnitBlinks],
+           [DDUnitDetails unitWithDisplayName:@"Century" symbol:@"" unit:DDTimeUnitCenturies],
+           [DDUnitDetails unitWithDisplayName:@"Cesium 133" symbol:@"" unit:DDTimeUnitCesium133],
+           [DDUnitDetails unitWithDisplayName:@"Day" symbol:@"d" unit:DDTimeUnitDays],
+           [DDUnitDetails unitWithDisplayName:@"Day (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealDays],
+           [DDUnitDetails unitWithDisplayName:@"Decade" symbol:@"" unit:DDTimeUnitDecades],
+           [DDUnitDetails unitWithDisplayName:@"Fortnight" symbol:@"" unit:DDTimeUnitFortnights],
+           [DDUnitDetails unitWithDisplayName:@"Hour" symbol:@"h" unit:DDTimeUnitHours],
+           [DDUnitDetails unitWithDisplayName:@"Hour (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealHours],
+           [DDUnitDetails unitWithDisplayName:@"Lunar year" symbol:@"" unit:DDTimeUnitLunarYears],
+           [DDUnitDetails unitWithDisplayName:@"Microfortnight" symbol:@"" unit:DDTimeUnitMicrofortnights],
+           [DDUnitDetails unitWithDisplayName:@"Microsecond" symbol:@"µs" unit:DDTimeUnitMicroseconds],
+           [DDUnitDetails unitWithDisplayName:@"Millenia" symbol:@"" unit:DDTimeUnitMillenia],
+           [DDUnitDetails unitWithDisplayName:@"Millisecond" symbol:@"ms" unit:DDTimeUnitMilliseconds],
+           [DDUnitDetails unitWithDisplayName:@"Minute" symbol:@"m" unit:DDTimeUnitMinutes],
+           [DDUnitDetails unitWithDisplayName:@"Minute (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealMinutes],
+           [DDUnitDetails unitWithDisplayName:@"Month" symbol:@"" unit:DDTimeUnitMonths],
+           [DDUnitDetails unitWithDisplayName:@"Nanosecond" symbol:@"ns" unit:DDTimeUnitNanoseconds],
+           [DDUnitDetails unitWithDisplayName:@"Picosecond" symbol:@"ps" unit:DDTimeUnitPicoseconds],
+           [DDUnitDetails unitWithDisplayName:@"Second" symbol:@"s" unit:DDTimeUnitSeconds],
+           [DDUnitDetails unitWithDisplayName:@"Second (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealSeconds],
+           [DDUnitDetails unitWithDisplayName:@"Tick" symbol:@"" unit:DDTimeUnitTicks],
+           [DDUnitDetails unitWithDisplayName:@"Week" symbol:@"w" unit:DDTimeUnitWeeks],
+           [DDUnitDetails unitWithDisplayName:@"Week (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealWeeks],
+           [DDUnitDetails unitWithDisplayName:@"Year" symbol:@"y" unit:DDTimeUnitYears],
+           [DDUnitDetails unitWithDisplayName:@"Year (Sidereal)" symbol:@"" unit:DDTimeUnitSiderealYears]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
@@ -52,6 +81,8 @@
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:2548979939168 exponent:-6 isNegative:NO]; break;
 		case DDTimeUnitNanoseconds:
 			multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-9 isNegative:NO]; break;
+    case DDTimeUnitPicoseconds:
+      multiplier = [NSDecimalNumber decimalNumberWithMantissa:1 exponent:-12 isNegative:NO]; break;
 		case DDTimeUnitSeconds:
 			break;
 		case DDTimeUnitTicks:

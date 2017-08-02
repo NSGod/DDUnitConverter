@@ -21,7 +21,32 @@
 @implementation DDVelocityUnitConverter
 
 - (NSString *)title {
-  return NSLocalizedString(@"Velocity", @"Title for Velocity unit converter");
+  return NSLocalizedString(@"Speed/Velocity", @"Title for Velocity unit converter");
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Centimeter Per Hour" symbol:@"cm/h" unit:DDVelocityUnitCentimetersPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Centimeter Per Minute" symbol:@"cm/m" unit:DDVelocityUnitCentimetersPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Centimeter Per Second" symbol:@"cm/s" unit:DDVelocityUnitCentimetersPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Foot Per Hour" symbol:@"ft/h" unit:DDVelocityUnitFeetPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Foot Per Minute" symbol:@"ft/m" unit:DDVelocityUnitFeetPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Foot Per Second" symbol:@"ft/s" unit:DDVelocityUnitFeetPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Inch Per Hour" symbol:@"in/h" unit:DDVelocityUnitInchesPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Inch Per Minute" symbol:@"in/m" unit:DDVelocityUnitInchesPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Inch Per Second" symbol:@"in/s" unit:DDVelocityUnitInchesPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Kilometer Per Hour" symbol:@"km/h" unit:DDVelocityUnitKilometersPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Kilometer Per Minute" symbol:@"km/m" unit:DDVelocityUnitKilometersPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Kilometer Per Second" symbol:@"km/s" unit:DDVelocityUnitKilometersPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Knot" symbol:@"" unit:DDVelocityUnitKnots],
+           [DDUnitDetails unitWithDisplayName:@"Light" symbol:@"" unit:DDVelocityUnitLight],
+           [DDUnitDetails unitWithDisplayName:@"Mach" symbol:@"" unit:DDVelocityUnitMach],
+           [DDUnitDetails unitWithDisplayName:@"Meter Per Hour" symbol:@"m/s" unit:DDVelocityUnitMetersPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Meter Per Minute" symbol:@"m/m" unit:DDVelocityUnitMetersPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Meter Per Second" symbol:@"m/s" unit:DDVelocityUnitMetersPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Mile Per Hour" symbol:@"mi/h" unit:DDVelocityUnitMilesPerHour],
+           [DDUnitDetails unitWithDisplayName:@"Mile Per Minute" symbol:@"mi/m" unit:DDVelocityUnitMilesPerMinute],
+           [DDUnitDetails unitWithDisplayName:@"Mile Per Second" symbol:@"mi/s" unit:DDVelocityUnitMilesPerSecond],
+           [DDUnitDetails unitWithDisplayName:@"Furlong Per Fortnight" symbol:@"" unit:DDVelocityUnitFurlongsPerFortnight]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

@@ -23,6 +23,53 @@
   return NSLocalizedString(@"Volume", @"Title for Volume unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Barrel (Dry)" symbol:@"" unit:DDVolumeUnitDryBarrels],
+           [DDUnitDetails unitWithDisplayName:@"Barrel (Liquid)" symbol:@"" unit:DDVolumeUnitLiquidBarrels],
+           [DDUnitDetails unitWithDisplayName:@"Bushel (UK)" symbol:@"bu" unit:DDVolumeUnitUKBushels],
+           [DDUnitDetails unitWithDisplayName:@"Bushel (US)" symbol:@"bu" unit:DDVolumeUnitUSBushels],
+           [DDUnitDetails unitWithDisplayName:@"Centiliter" symbol:@"cL" unit:DDVolumeUnitCentiliters],
+           [DDUnitDetails unitWithDisplayName:@"Coffee Spoon" symbol:@"" unit:DDVolumeUnitCoffeeSpoons],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Centimeter" symbol:@"cm³" unit:DDVolumeUnitCubicCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Decimeter" symbol:@"dm³" unit:DDVolumeUnitCubicDecimeters],
+           [DDUnitDetails unitWithDisplayName:@"Cubic  Foot" symbol:@"ft³" unit:DDVolumeUnitCubicFeet],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Inch" symbol:@"in³" unit:DDVolumeUnitCubicInches],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Kilometer" symbol:@"km³" unit:DDVolumeUnitCubicKilometers],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Meter" symbol:@"m³" unit:DDVolumeUnitCubicMeters],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Mile" symbol:@"mi³" unit:DDVolumeUnitCubicMiles],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Millimeter" symbol:@"mm³" unit:DDVolumeUnitCubicMillimeters],
+           [DDUnitDetails unitWithDisplayName:@"Cubic Yard" symbol:@"yd³" unit:DDVolumeUnitCubicYards],
+           [DDUnitDetails unitWithDisplayName:@"Cup" symbol:@"" unit:DDVolumeUnitCups],
+           [DDUnitDetails unitWithDisplayName:@"Dash" symbol:@"" unit:DDVolumeUnitDashes],
+           [DDUnitDetails unitWithDisplayName:@"Deciliter" symbol:@"" unit:DDVolumeUnitDeciliters],
+           [DDUnitDetails unitWithDisplayName:@"Drachm" symbol:@"" unit:DDVolumeUnitDrachms],
+           [DDUnitDetails unitWithDisplayName:@"Dram" symbol:@"" unit:DDVolumeUnitDrams],
+           [DDUnitDetails unitWithDisplayName:@"Drop" symbol:@"" unit:DDVolumeUnitDrops],
+           [DDUnitDetails unitWithDisplayName:@"Fluid Ounce (UK)" symbol:@"fl oz" unit:DDVolumeUnitUKFluidOunces],
+           [DDUnitDetails unitWithDisplayName:@"Fluid Ounce (UK)" symbol:@"fl oz" unit:DDVolumeUnitUSFluidOunces],
+           [DDUnitDetails unitWithDisplayName:@"Gallon" symbol:@"gal" unit:DDVolumeUnitGallons],
+           [DDUnitDetails unitWithDisplayName:@"Gallon (UK)" symbol:@"gal" unit:DDVolumeUnitUKGallons],
+           [DDUnitDetails unitWithDisplayName:@"Gill (UK)" symbol:@"" unit:DDVolumeUnitUKGills],
+           [DDUnitDetails unitWithDisplayName:@"Gill (US)" symbol:@"" unit:DDVolumeUnitUSGills],
+           [DDUnitDetails unitWithDisplayName:@"Liter" symbol:@"" unit:DDVolumeUnitLiters],
+           [DDUnitDetails unitWithDisplayName:@"Milliliter" symbol:@"" unit:DDVolumeUnitMilliliters],
+           [DDUnitDetails unitWithDisplayName:@"Minim (UK)" symbol:@"" unit:DDVolumeUnitUKMinims],
+           [DDUnitDetails unitWithDisplayName:@"Minim (US)" symbol:@"" unit:DDVolumeUnitUSMinims],
+           [DDUnitDetails unitWithDisplayName:@"Peck (UK)" symbol:@"" unit:DDVolumeUnitUKPecks],
+           [DDUnitDetails unitWithDisplayName:@"Peck (US)" symbol:@"" unit:DDVolumeUnitUSPecks],
+           [DDUnitDetails unitWithDisplayName:@"Pinch" symbol:@"" unit:DDVolumeUnitPinches],
+           [DDUnitDetails unitWithDisplayName:@"Pint (UK)" symbol:@"pt" unit:DDVolumeUnitUKPints],
+           [DDUnitDetails unitWithDisplayName:@"Pint (US Dry)" symbol:@"pt" unit:DDVolumeUnitUSDryPints],
+           [DDUnitDetails unitWithDisplayName:@"Pint (US Fluid)" symbol:@"pt" unit:DDVolumeUnitUSFluidPints],
+           [DDUnitDetails unitWithDisplayName:@"Quart (UK)" symbol:@"qt" unit:DDVolumeUnitUKQuarts],
+           [DDUnitDetails unitWithDisplayName:@"Quart (US Dry)" symbol:@"qt" unit:DDVolumeUnitUSDryQuarts],
+           [DDUnitDetails unitWithDisplayName:@"Quart (US Liquid)" symbol:@"" unit:DDVolumeUnitUSLiquidQuarts],
+           [DDUnitDetails unitWithDisplayName:@"Tablespoon" symbol:@"" unit:DDVolumeUnitTablespoons],
+           [DDUnitDetails unitWithDisplayName:@"Teaspoon" symbol:@"" unit:DDVolumeUnitTeaspons],
+           [DDUnitDetails unitWithDisplayName:@"#2.5 Can" symbol:@"" unit:DDVolumeUnitNumber2Point5Cans],
+           [DDUnitDetails unitWithDisplayName:@"#10 Can" symbol:@"" unit:DDVolumeUnitNumber10Cans]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {

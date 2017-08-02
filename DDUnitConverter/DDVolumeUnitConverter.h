@@ -16,7 +16,7 @@
 @end
 
 typedef NS_ENUM(NSInteger, DDVolumeUnit) {
-    DDVolumeUnitDryBarrels = 0,
+  DDVolumeUnitDryBarrels = 0,
 	DDVolumeUnitLiquidBarrels,
 	DDVolumeUnitUKBushels,
 	DDVolumeUnitUSBushels,

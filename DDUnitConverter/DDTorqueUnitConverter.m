@@ -24,6 +24,19 @@
   return NSLocalizedString(@"Torque", @"Title for Torque unit converter");
 }
 
+- (NSArray<DDUnitDetails *> *)allUnitsList {
+  return @[[DDUnitDetails unitWithDisplayName:@"Dyne Centimeter" symbol:@"" unit:DDTorqueUnitDyneCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Gram Force Centimeter" symbol:@"" unit:DDTorqueUnitGramForceCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Kg Force Centimeter" symbol:@"kgf.cm" unit:DDTorqueUnitKilogramForceCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Kg Force Meter" symbol:@"kgf.m" unit:DDTorqueUnitKilogramForceMeters],
+           [DDUnitDetails unitWithDisplayName:@"Newton Centimeter" symbol:@"Ncm" unit:DDTorqueUnitNewtonCentimeters],
+           [DDUnitDetails unitWithDisplayName:@"Newter Meter" symbol:@"Nm" unit:DDTorqueUnitNewtonMeters],
+           [DDUnitDetails unitWithDisplayName:@"Ounce Force Inch" symbol:@"" unit:DDTorqueUnitOunceForceInches],
+           [DDUnitDetails unitWithDisplayName:@"Poundal Feet" symbol:@"" unit:DDTorqueUnitPoundalFeet],
+           [DDUnitDetails unitWithDisplayName:@"Pound Force Foot" symbol:@"lbsf.ft" unit:DDTorqueUnitPoundForceFeet],
+           [DDUnitDetails unitWithDisplayName:@"Pound Force Inch" symbol:@"lbsf.in" unit:DDTorqueUnitPoundForceInches]];
+}
+
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
 	NSDecimalNumber *multiplier = [NSDecimalNumber one];
 	switch (unit) {
