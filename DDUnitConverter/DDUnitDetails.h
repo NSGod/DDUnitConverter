@@ -11,8 +11,8 @@ typedef NSInteger DDUnit;
 
 @interface DDUnitDetails : NSObject
 
-@property (nonatomic) NSString *displayName;
-@property (nonatomic) NSString *symbol;
+@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, copy) NSString *symbol;
 - (DDUnit)unit;
 
 + (instancetype)unitWithDisplayName:(NSString *)displayName
