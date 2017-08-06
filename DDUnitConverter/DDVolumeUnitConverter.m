@@ -46,7 +46,7 @@
            [DDUnitDetails unitWithDisplayName:@"Dram" symbol:@"" unit:DDVolumeUnitDrams],
            [DDUnitDetails unitWithDisplayName:@"Drop" symbol:@"" unit:DDVolumeUnitDrops],
            [DDUnitDetails unitWithDisplayName:@"Fluid Ounce (UK)" symbol:@"fl oz" unit:DDVolumeUnitUKFluidOunces],
-           [DDUnitDetails unitWithDisplayName:@"Fluid Ounce (UK)" symbol:@"fl oz" unit:DDVolumeUnitUSFluidOunces],
+           [DDUnitDetails unitWithDisplayName:@"Fluid Ounce (US)" symbol:@"fl oz" unit:DDVolumeUnitUSFluidOunces],
            [DDUnitDetails unitWithDisplayName:@"Gallon" symbol:@"gal" unit:DDVolumeUnitGallons],
            [DDUnitDetails unitWithDisplayName:@"Gallon (UK)" symbol:@"gal" unit:DDVolumeUnitUKGallons],
            [DDUnitDetails unitWithDisplayName:@"Gill (UK)" symbol:@"" unit:DDVolumeUnitUKGills],
