@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDVolumeUnitConverter)
 
-+ (instancetype)volumeUnitConverter {
++ (instancetype)newVolumeUnitConverter {
 	return [[DDVolumeUnitConverter alloc] init];
 }
 

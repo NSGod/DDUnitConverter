@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDTimeUnitConverter)
 
-+ (instancetype)timeUnitConverter;
++ (instancetype)newTimeUnitConverter;
 
 @end
 

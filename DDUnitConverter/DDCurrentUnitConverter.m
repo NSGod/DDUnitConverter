@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDCurrentUnitConverter)
 
-+ (instancetype)currentUnitConverter {
++ (instancetype)newCurrentUnitConverter {
 	return [[DDCurrentUnitConverter alloc] init];
 }
 

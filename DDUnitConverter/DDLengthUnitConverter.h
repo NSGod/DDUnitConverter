@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDLengthUnitConverter)
 
-+ (instancetype)lengthUnitConverter;
++ (instancetype)newLengthUnitConverter;
 
 @end
 

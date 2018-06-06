@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDCurrencyUnitConverter)
 
-+ (instancetype)currencyUnitConverter;
++ (instancetype)newCurrencyUnitConverter;
 
 @end
 

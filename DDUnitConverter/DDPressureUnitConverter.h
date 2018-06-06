@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDPressureUnitConverter)
 
-+ (instancetype)pressureUnitConverter;
++ (instancetype)newPressureUnitConverter;
 
 @end
 

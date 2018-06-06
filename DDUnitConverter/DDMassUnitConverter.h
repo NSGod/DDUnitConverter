@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDMassUnitConverter)
 
-+ (instancetype)massUnitConverter;
++ (instancetype)newMassUnitConverter;
 
 @end
 

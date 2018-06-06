@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDInductanceUnitConverter)
 
-+ (instancetype)inductanceUnitConverter;
++ (instancetype)newInductanceUnitConverter;
 
 @end
 

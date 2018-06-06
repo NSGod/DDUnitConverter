@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDTimeUnitConverter)
 
-+ (instancetype)timeUnitConverter {
++ (instancetype)newTimeUnitConverter {
 	return [[DDTimeUnitConverter alloc] init];
 }
 

@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDIlluminationUnitConverter)
 
-+ (instancetype)illuminationUnitConverter {
++ (instancetype)newIlluminationUnitConverter {
 	return [[DDIlluminationUnitConverter alloc] init];
 }
 

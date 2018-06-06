@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDForceUnitConverter)
 
-+ (instancetype)forceUnitConverter;
++ (instancetype)newForceUnitConverter;
 
 @end
 

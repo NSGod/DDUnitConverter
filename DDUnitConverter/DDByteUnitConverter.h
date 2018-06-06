@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDByteUnitConverter)
 
-+ (instancetype)byteUnitConverter;
++ (instancetype)newByteUnitConverter;
 
 @end
 

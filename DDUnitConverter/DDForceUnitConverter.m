@@ -11,7 +11,7 @@
 
 @implementation DDUnitConverter (DDForceUnitConverter)
 
-+ (instancetype)forceUnitConverter {
++ (instancetype)newForceUnitConverter {
 	return [[DDForceUnitConverter alloc] init];
 }
 

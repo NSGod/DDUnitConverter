@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDVolumeUnitConverter)
 
-+ (instancetype)volumeUnitConverter;
++ (instancetype)newVolumeUnitConverter;
 
 @end
 

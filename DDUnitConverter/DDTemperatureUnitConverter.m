@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDTemperatureUnitConverter)
 
-+ (instancetype)temperatureUnitConverter {
++ (instancetype)newTemperatureUnitConverter {
 	return [[DDTemperatureUnitConverter alloc] init];
 }
 

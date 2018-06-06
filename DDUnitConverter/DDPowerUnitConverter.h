@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDPowerUnitConverter)
 
-+ (instancetype)powerUnitConverter;
++ (instancetype)newPowerUnitConverter;
 
 @end
 

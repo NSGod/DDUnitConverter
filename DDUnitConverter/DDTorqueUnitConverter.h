@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDTorqueUnitConverter)
 
-+ (instancetype)torqueUnitConverter;
++ (instancetype)newTorqueUnitConverter;
 
 @end
 

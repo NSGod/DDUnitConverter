@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDRadiationUnitConverter)
 
-+ (instancetype)radiationUnitConverter {
++ (instancetype)newRadiationUnitConverter {
 	return [[DDRadiationUnitConverter alloc] init];
 }
 

@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDLengthUnitConverter)
 
-+ (instancetype)lengthUnitConverter {
++ (instancetype)newLengthUnitConverter {
 	return [[DDLengthUnitConverter alloc] init];
 }
 

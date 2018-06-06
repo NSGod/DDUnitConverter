@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDMassUnitConverter)
 
-+ (instancetype)massUnitConverter {
++ (instancetype)newMassUnitConverter {
 	return [[DDMassUnitConverter alloc] init];
 }
 

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDTemperatureUnitConverter)
 
-+ (instancetype)temperatureUnitConverter;
++ (instancetype)newTemperatureUnitConverter;
 
 @end
 

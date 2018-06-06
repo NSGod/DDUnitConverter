@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDCurrentUnitConverter)
 
-+ (instancetype)currentUnitConverter;
++ (instancetype)newCurrentUnitConverter;
 
 @end
 

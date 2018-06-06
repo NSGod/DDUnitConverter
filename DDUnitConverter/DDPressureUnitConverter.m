@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDPressureUnitConverter)
 
-+ (instancetype)pressureUnitConverter {
++ (instancetype)newPressureUnitConverter {
 	return [[DDPressureUnitConverter alloc] init];
 }
 

@@ -11,7 +11,7 @@
 
 @implementation DDUnitConverter (DDAccelerationUnitConverter)
 
-+ (instancetype)accelerationUnitConverter {
++ (instancetype)newAccelerationUnitConverter {
 	return [[DDAccelerationUnitConverter alloc] init];
 }
 

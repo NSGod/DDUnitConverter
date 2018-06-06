@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDVelocityUnitConverter)
 
-+ (instancetype)velocityUnitConverter;
++ (instancetype)newVelocityUnitConverter;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDIlluminationUnitConverter)
 
-+ (instancetype)illuminationUnitConverter;
++ (instancetype)newIlluminationUnitConverter;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDAreaUnitConverter)
 
-+ (instancetype)areaUnitConverter;
++ (instancetype)newAreaUnitConverter;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter : NSObject
 
-+ (NSArray<DDUnitConverter *> *)allConverters;
++ (NSArray<DDUnitConverter *> *)newConvertersList;
 
 - (NSNumber *)convertNumber:(NSNumber *)number fromUnit:(DDUnit)fromUnit toUnit:(DDUnit)toUnit;
 - (NSArray<DDUnitDetails *> *)allUnitsList;

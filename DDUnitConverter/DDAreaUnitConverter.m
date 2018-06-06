@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDAreaUnitConverter)
 
-+ (instancetype)areaUnitConverter {
++ (instancetype)newAreaUnitConverter {
 	return [[DDAreaUnitConverter alloc] init];
 }
 

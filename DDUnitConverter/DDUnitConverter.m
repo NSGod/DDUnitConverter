@@ -35,25 +35,25 @@
 	return valueInTargetUnit;
 }
 
-+ (NSArray *)allConverters {
-  return @[[DDUnitConverter angleUnitConverter],
-           [DDUnitConverter lengthUnitConverter],
-           [DDUnitConverter areaUnitConverter],
-           [DDUnitConverter byteUnitConverter],
-           [DDUnitConverter currentUnitConverter],
-           [DDUnitConverter energyUnitConverter],
-           [DDUnitConverter forceUnitConverter],
-           [DDUnitConverter illuminationUnitConverter],
-           [DDUnitConverter magnitudeUnitConverter],
-           [DDUnitConverter powerUnitConverter],
-           [DDUnitConverter pressureUnitConverter],
-           [DDUnitConverter radiationUnitConverter],
-           [DDUnitConverter temperatureUnitConverter],
-           [DDUnitConverter velocityUnitConverter],
-           [DDUnitConverter timeUnitConverter],
-           [DDUnitConverter torqueUnitConverter],
-           [DDUnitConverter volumeUnitConverter],
-           [DDUnitConverter massUnitConverter]];
++ (NSArray *)newConvertersList {
+  return @[[DDUnitConverter newAngleUnitConverter],
+           [DDUnitConverter newLengthUnitConverter],
+           [DDUnitConverter newAreaUnitConverter],
+           [DDUnitConverter newByteUnitConverter],
+           [DDUnitConverter newCurrentUnitConverter],
+           [DDUnitConverter newEnergyUnitConverter],
+           [DDUnitConverter newForceUnitConverter],
+           [DDUnitConverter newIlluminationUnitConverter],
+           [DDUnitConverter newMagnitudeUnitConverter],
+           [DDUnitConverter newPowerUnitConverter],
+           [DDUnitConverter newPressureUnitConverter],
+           [DDUnitConverter newRadiationUnitConverter],
+           [DDUnitConverter newTemperatureUnitConverter],
+           [DDUnitConverter newVelocityUnitConverter],
+           [DDUnitConverter newTimeUnitConverter],
+           [DDUnitConverter newTorqueUnitConverter],
+           [DDUnitConverter newVolumeUnitConverter],
+           [DDUnitConverter newMassUnitConverter]];
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDRadiationUnitConverter)
 
-+ (instancetype)radiationUnitConverter;
++ (instancetype)newRadiationUnitConverter;
 
 @end
 

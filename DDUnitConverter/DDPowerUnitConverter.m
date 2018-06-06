@@ -11,7 +11,7 @@
 
 @implementation DDUnitConverter (DDPowerUnitConverter)
 
-+ (instancetype)powerUnitConverter {
++ (instancetype)newPowerUnitConverter {
 	return [[DDPowerUnitConverter alloc] init];
 }
 

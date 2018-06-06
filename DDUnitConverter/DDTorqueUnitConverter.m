@@ -11,7 +11,7 @@
 
 @implementation DDUnitConverter (DDTorqueUnitConverter)
 
-+ (instancetype)torqueUnitConverter {
++ (instancetype)newTorqueUnitConverter {
 	return [[DDTorqueUnitConverter alloc] init];
 }
 

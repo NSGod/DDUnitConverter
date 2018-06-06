@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDEnergyUnitConverter)
 
-+ (instancetype)energyUnitConverter;
++ (instancetype)newEnergyUnitConverter;
 
 @end
 

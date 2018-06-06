@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDMagnitudeUnitConverter)
 
-+ (instancetype)magnitudeUnitConverter;
++ (instancetype)newMagnitudeUnitConverter;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter (DDAngleUnitConverter)
 
-+ (instancetype) angleUnitConverter;
++ (instancetype)newAngleUnitConverter;
 
 @end
 

@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDInductanceUnitConverter)
 
-+ (instancetype)inductanceUnitConverter {
++ (instancetype)newInductanceUnitConverter {
 	return [[DDInductanceUnitConverter alloc] init];
 }
 

@@ -208,7 +208,7 @@ static NSString *_DDCurrencyNames[] = {
 
 @implementation DDUnitConverter (DDCurrencyUnitConverter)
 
-+ (instancetype)currencyUnitConverter {
++ (instancetype)newCurrencyUnitConverter {
 	return [[DDCurrencyUnitConverter alloc] init];
 }
 

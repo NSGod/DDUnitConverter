@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDByteUnitConverter)
 
-+ (instancetype)byteUnitConverter {
++ (instancetype)newByteUnitConverter {
 	return [[DDByteUnitConverter alloc] init];
 }
 

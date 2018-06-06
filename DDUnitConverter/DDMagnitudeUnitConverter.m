@@ -10,7 +10,7 @@
 
 @implementation DDUnitConverter (DDMagnitudeUnitConverter)
 
-+ (instancetype)magnitudeUnitConverter {
++ (instancetype)newMagnitudeUnitConverter {
 	return [[DDMagnitudeUnitConverter alloc] init];
 }
 

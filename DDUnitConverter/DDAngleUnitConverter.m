@@ -11,7 +11,7 @@
 
 @implementation DDUnitConverter (DDAngleUnitConverter)
 
-+ (instancetype)angleUnitConverter {
++ (instancetype)newAngleUnitConverter {
 	return [[DDAngleUnitConverter alloc] init];
 }
 
