@@ -21,18 +21,18 @@
 @implementation DDAngleUnitConverter
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Circle" symbol:@"circle" unit:DDAngleUnitCircles],
-           [DDUnitDetails unitWithDisplayName:@"Degree" symbol:@"°" unit:DDAngleUnitDegrees],
-           [DDUnitDetails unitWithDisplayName:@"Gon" symbol:@"g" unit:DDAngleUnitGons],
-           [DDUnitDetails unitWithDisplayName:@"Grade/Gradian" symbol:@"g" unit:DDAngleUnitGrades],
-           [DDUnitDetails unitWithDisplayName:@"Minute" symbol:@"min" unit:DDAngleUnitMinutes],
-           [DDUnitDetails unitWithDisplayName:@"Milliradian" symbol:@"mil/mrad" unit:DDAngleUnitMils],
-           [DDUnitDetails unitWithDisplayName:@"Nautical Rhumb" symbol:@"" unit:DDAngleUnitNauticalRhumbs],
-           [DDUnitDetails unitWithDisplayName:@"Quadrant" symbol:@"quad" unit:DDAngleUnitQuadrants],
-           [DDUnitDetails unitWithDisplayName:@"Radian" symbol:@"rad" unit:DDAngleUnitRadians],
-           [DDUnitDetails unitWithDisplayName:@"Revolution" symbol:@"rev" unit:DDAngleUnitRevolutions],
-           [DDUnitDetails unitWithDisplayName:@"Second" symbol:@"sec" unit:DDAngleUnitSeconds],
-           [DDUnitDetails unitWithDisplayName:@"Turn" symbol:@"tr" unit:DDAngleUnitTurns]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Circle" symbol:@"circle" unit:DDAngleUnitCircles],
+           [DDUnitDetails newUnitWithDisplayName:@"Degree" symbol:@"°" unit:DDAngleUnitDegrees],
+           [DDUnitDetails newUnitWithDisplayName:@"Gon" symbol:@"g" unit:DDAngleUnitGons],
+           [DDUnitDetails newUnitWithDisplayName:@"Grade/Gradian" symbol:@"g" unit:DDAngleUnitGrades],
+           [DDUnitDetails newUnitWithDisplayName:@"Minute" symbol:@"min" unit:DDAngleUnitMinutes],
+           [DDUnitDetails newUnitWithDisplayName:@"Milliradian" symbol:@"mil/mrad" unit:DDAngleUnitMils],
+           [DDUnitDetails newUnitWithDisplayName:@"Nautical Rhumb" symbol:@"" unit:DDAngleUnitNauticalRhumbs],
+           [DDUnitDetails newUnitWithDisplayName:@"Quadrant" symbol:@"quad" unit:DDAngleUnitQuadrants],
+           [DDUnitDetails newUnitWithDisplayName:@"Radian" symbol:@"rad" unit:DDAngleUnitRadians],
+           [DDUnitDetails newUnitWithDisplayName:@"Revolution" symbol:@"rev" unit:DDAngleUnitRevolutions],
+           [DDUnitDetails newUnitWithDisplayName:@"Second" symbol:@"sec" unit:DDAngleUnitSeconds],
+           [DDUnitDetails newUnitWithDisplayName:@"Turn" symbol:@"tr" unit:DDAngleUnitTurns]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

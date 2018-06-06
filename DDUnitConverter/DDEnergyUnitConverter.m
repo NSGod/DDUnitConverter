@@ -21,16 +21,16 @@
 @implementation DDEnergyUnitConverter
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Calorie" symbol:@"cal" unit:DDEnergyUnitCalories],
-           [DDUnitDetails unitWithDisplayName:@"Electron Volt" symbol:@"eV" unit:DDEnergyUnitElectronVolts],
-           [DDUnitDetails unitWithDisplayName:@"Erg" symbol:@"erg" unit:DDEnergyUnitErgs],
-           [DDUnitDetails unitWithDisplayName:@"Foot-Pound Force" symbol:@"ft·lbf" unit:DDEnergyUnitFootPoundForces],
-           [DDUnitDetails unitWithDisplayName:@"Joule" symbol:@"J" unit:DDEnergyUnitJoules],
-           [DDUnitDetails unitWithDisplayName:@"Kg Force Meter" symbol:@"kgf·m" unit:DDEnergyUnitKilogramForceMeters],
-           [DDUnitDetails unitWithDisplayName:@"Watt Hour" symbol:@"Wh" unit:DDEnergyUnitWattHours],
-           [DDUnitDetails unitWithDisplayName:@"Kilowatt Hour" symbol:@"kWh" unit:DDEnergyUnitKilowattHours],
-           [DDUnitDetails unitWithDisplayName:@"Newton Meter" symbol:@"N·m" unit:DDEnergyUnitNewtonMeters],
-           [DDUnitDetails unitWithDisplayName:@"Therm" symbol:@"thm" unit:DDEnergyUnitTherms]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Calorie" symbol:@"cal" unit:DDEnergyUnitCalories],
+           [DDUnitDetails newUnitWithDisplayName:@"Electron Volt" symbol:@"eV" unit:DDEnergyUnitElectronVolts],
+           [DDUnitDetails newUnitWithDisplayName:@"Erg" symbol:@"erg" unit:DDEnergyUnitErgs],
+           [DDUnitDetails newUnitWithDisplayName:@"Foot-Pound Force" symbol:@"ft·lbf" unit:DDEnergyUnitFootPoundForces],
+           [DDUnitDetails newUnitWithDisplayName:@"Joule" symbol:@"J" unit:DDEnergyUnitJoules],
+           [DDUnitDetails newUnitWithDisplayName:@"Kg Force Meter" symbol:@"kgf·m" unit:DDEnergyUnitKilogramForceMeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Watt Hour" symbol:@"Wh" unit:DDEnergyUnitWattHours],
+           [DDUnitDetails newUnitWithDisplayName:@"Kilowatt Hour" symbol:@"kWh" unit:DDEnergyUnitKilowattHours],
+           [DDUnitDetails newUnitWithDisplayName:@"Newton Meter" symbol:@"N·m" unit:DDEnergyUnitNewtonMeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Therm" symbol:@"thm" unit:DDEnergyUnitTherms]];
 }
 
 - (NSString *)title {

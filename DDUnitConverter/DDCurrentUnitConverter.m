@@ -20,15 +20,15 @@
 @implementation DDCurrentUnitConverter
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Ampere" symbol:@"A" unit:DDCurrentUnitAmperes],
-           [DDUnitDetails unitWithDisplayName:@"ElectromagneticUnit" symbol:@"" unit:DDCurrentUnitElectromagneticUnits],
-           [DDUnitDetails unitWithDisplayName:@"Kiloampere" symbol:@"kA" unit:DDCurrentUnitKiloamperes],
-           [DDUnitDetails unitWithDisplayName:@"Milliampere" symbol:@"mA" unit:DDCurrentUnitMilliamperes],
-           [DDUnitDetails unitWithDisplayName:@"Microampere" symbol:@"μA" unit:DDCurrentUnitMicroamperes],
-           [DDUnitDetails unitWithDisplayName:@"Nanoampere" symbol:@"nA" unit:DDCurrentUnitNanoamperes],
-           [DDUnitDetails unitWithDisplayName:@"Statampere" symbol:@"statA" unit:DDCurrentUnitStatamperes],
-           [DDUnitDetails unitWithDisplayName:@"Abampere" symbol:@"abA" unit:DDCurrentUnitAbamperes],
-           [DDUnitDetails unitWithDisplayName:@"Colombo Per Second" symbol:@"" unit:DDCurrentUnitColomboPerSeconds]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Ampere" symbol:@"A" unit:DDCurrentUnitAmperes],
+           [DDUnitDetails newUnitWithDisplayName:@"ElectromagneticUnit" symbol:@"" unit:DDCurrentUnitElectromagneticUnits],
+           [DDUnitDetails newUnitWithDisplayName:@"Kiloampere" symbol:@"kA" unit:DDCurrentUnitKiloamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Milliampere" symbol:@"mA" unit:DDCurrentUnitMilliamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Microampere" symbol:@"μA" unit:DDCurrentUnitMicroamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Nanoampere" symbol:@"nA" unit:DDCurrentUnitNanoamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Statampere" symbol:@"statA" unit:DDCurrentUnitStatamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Abampere" symbol:@"abA" unit:DDCurrentUnitAbamperes],
+           [DDUnitDetails newUnitWithDisplayName:@"Colombo Per Second" symbol:@"" unit:DDCurrentUnitColomboPerSeconds]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

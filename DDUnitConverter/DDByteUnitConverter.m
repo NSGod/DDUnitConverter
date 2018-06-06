@@ -20,26 +20,26 @@
 @implementation DDByteUnitConverter
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Bit" symbol:@"b" unit:DDByteUnitBit],
-           [DDUnitDetails unitWithDisplayName:@"Crumb" symbol:@"crumb" unit:DDByteUnitCrumb],
-           [DDUnitDetails unitWithDisplayName:@"Nibble" symbol:@"nibble" unit:DDByteUnitNibble],
-           [DDUnitDetails unitWithDisplayName:@"Byte" symbol:@"B" unit:DDByteUnitByte],
-           [DDUnitDetails unitWithDisplayName:@"Decabyte" symbol:@"DB" unit:DDByteUnitDecabyte],
-           [DDUnitDetails unitWithDisplayName:@"Hectobyte" symbol:@"HB" unit:DDByteUnitHectobyte],
-           [DDUnitDetails unitWithDisplayName:@"Kilobyte" symbol:@"KB" unit:DDByteUnitKilobyte],
-           [DDUnitDetails unitWithDisplayName:@"Megabyte" symbol:@"MB" unit:DDByteUnitMegabyte],
-           [DDUnitDetails unitWithDisplayName:@"Gigabyte" symbol:@"GB" unit:DDByteUnitGigabyte],
-           [DDUnitDetails unitWithDisplayName:@"Terabyte" symbol:@"TB" unit:DDByteUnitTerabyte],
-           [DDUnitDetails unitWithDisplayName:@"Petabyte" symbol:@"PB" unit:DDByteUnitPetabyte],
-           [DDUnitDetails unitWithDisplayName:@"Exabyte" symbol:@"EB" unit:DDByteUnitExabyte],
-           [DDUnitDetails unitWithDisplayName:@"Zettabyte" symbol:@"ZB" unit:DDByteUnitZettabyte],
-           [DDUnitDetails unitWithDisplayName:@"Yottabyte" symbol:@"YB" unit:DDByteUnitYottabyte],
-           [DDUnitDetails unitWithDisplayName:@"Kibibyte" symbol:@"Ki" unit:DDByteUnitKibibyte],
-           [DDUnitDetails unitWithDisplayName:@"Mebibyte" symbol:@"Mi" unit:DDByteUnitMebibyte],
-           [DDUnitDetails unitWithDisplayName:@"Gibibyte" symbol:@"Gi" unit:DDByteUnitGibibyte],
-           [DDUnitDetails unitWithDisplayName:@"Tebibyte" symbol:@"Ti" unit:DDByteUnitTebibyte],
-           [DDUnitDetails unitWithDisplayName:@"Pebibyte" symbol:@"Pi" unit:DDByteUnitPebibyte],
-           [DDUnitDetails unitWithDisplayName:@"Exbibyte" symbol:@"Ei" unit:DDByteUnitExbibyte]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Bit" symbol:@"b" unit:DDByteUnitBit],
+           [DDUnitDetails newUnitWithDisplayName:@"Crumb" symbol:@"crumb" unit:DDByteUnitCrumb],
+           [DDUnitDetails newUnitWithDisplayName:@"Nibble" symbol:@"nibble" unit:DDByteUnitNibble],
+           [DDUnitDetails newUnitWithDisplayName:@"Byte" symbol:@"B" unit:DDByteUnitByte],
+           [DDUnitDetails newUnitWithDisplayName:@"Decabyte" symbol:@"DB" unit:DDByteUnitDecabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Hectobyte" symbol:@"HB" unit:DDByteUnitHectobyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Kilobyte" symbol:@"KB" unit:DDByteUnitKilobyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Megabyte" symbol:@"MB" unit:DDByteUnitMegabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Gigabyte" symbol:@"GB" unit:DDByteUnitGigabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Terabyte" symbol:@"TB" unit:DDByteUnitTerabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Petabyte" symbol:@"PB" unit:DDByteUnitPetabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Exabyte" symbol:@"EB" unit:DDByteUnitExabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Zettabyte" symbol:@"ZB" unit:DDByteUnitZettabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Yottabyte" symbol:@"YB" unit:DDByteUnitYottabyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Kibibyte" symbol:@"Ki" unit:DDByteUnitKibibyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Mebibyte" symbol:@"Mi" unit:DDByteUnitMebibyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Gibibyte" symbol:@"Gi" unit:DDByteUnitGibibyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Tebibyte" symbol:@"Ti" unit:DDByteUnitTebibyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Pebibyte" symbol:@"Pi" unit:DDByteUnitPebibyte],
+           [DDUnitDetails newUnitWithDisplayName:@"Exbibyte" symbol:@"Ei" unit:DDByteUnitExbibyte]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

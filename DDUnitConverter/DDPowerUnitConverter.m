@@ -25,20 +25,20 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Calorie Per Second" symbol:@"cal/s" unit:DDPowerUnitCaloriePerSecond],
-           [DDUnitDetails unitWithDisplayName:@"Foot Pound Force Per Second" symbol:@"lbf/s" unit:DDPowerUnitFootPoundForcesPerSecond],
-           [DDUnitDetails unitWithDisplayName:@"Horsepower" symbol:@"hp" unit:DDPowerUnitHorsepower],
-           [DDUnitDetails unitWithDisplayName:@"Joules Per Second" symbol:@"J/s" unit:DDPowerUnitJoulesPerSecond],
-           [DDUnitDetails unitWithDisplayName:@"Kilogram Force Meter Per Second"
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Calorie Per Second" symbol:@"cal/s" unit:DDPowerUnitCaloriePerSecond],
+           [DDUnitDetails newUnitWithDisplayName:@"Foot Pound Force Per Second" symbol:@"lbf/s" unit:DDPowerUnitFootPoundForcesPerSecond],
+           [DDUnitDetails newUnitWithDisplayName:@"Horsepower" symbol:@"hp" unit:DDPowerUnitHorsepower],
+           [DDUnitDetails newUnitWithDisplayName:@"Joules Per Second" symbol:@"J/s" unit:DDPowerUnitJoulesPerSecond],
+           [DDUnitDetails newUnitWithDisplayName:@"Kilogram Force Meter Per Second"
                                        symbol:@"kgf/s"
                                          unit:DDPowerUnitKilogramForceMetersPerSecond],
-           [DDUnitDetails unitWithDisplayName:@"Kilowatt" symbol:@"" unit:DDPowerUnitKilowatts],
-           [DDUnitDetails unitWithDisplayName:@"Lusec" symbol:@"" unit:DDPowerUnitLusec],
-           [DDUnitDetails unitWithDisplayName:@"Megawatt" symbol:@"" unit:DDPowerUnitMegawatts],
-           [DDUnitDetails unitWithDisplayName:@"Metric Horsepower" symbol:@"" unit:DDPowerUnitMetricHorsepower],
-           [DDUnitDetails unitWithDisplayName:@"Microwatt" symbol:@"" unit:DDPowerUnitMicrowatts],
-           [DDUnitDetails unitWithDisplayName:@"Milliwatt" symbol:@"" unit:DDPowerUnitMilliwatts],
-           [DDUnitDetails unitWithDisplayName:@"Watt" symbol:@"" unit:DDPowerUnitWatts]];
+           [DDUnitDetails newUnitWithDisplayName:@"Kilowatt" symbol:@"" unit:DDPowerUnitKilowatts],
+           [DDUnitDetails newUnitWithDisplayName:@"Lusec" symbol:@"" unit:DDPowerUnitLusec],
+           [DDUnitDetails newUnitWithDisplayName:@"Megawatt" symbol:@"" unit:DDPowerUnitMegawatts],
+           [DDUnitDetails newUnitWithDisplayName:@"Metric Horsepower" symbol:@"" unit:DDPowerUnitMetricHorsepower],
+           [DDUnitDetails newUnitWithDisplayName:@"Microwatt" symbol:@"" unit:DDPowerUnitMicrowatts],
+           [DDUnitDetails newUnitWithDisplayName:@"Milliwatt" symbol:@"" unit:DDPowerUnitMilliwatts],
+           [DDUnitDetails newUnitWithDisplayName:@"Watt" symbol:@"" unit:DDPowerUnitWatts]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

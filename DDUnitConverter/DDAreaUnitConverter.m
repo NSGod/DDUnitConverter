@@ -24,21 +24,21 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Hectare" symbol:@"ha" unit:DDAreaUnitHectares],
-           [DDUnitDetails unitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres],
-           [DDUnitDetails unitWithDisplayName:@"Are" symbol:@"a" unit:DDAreaUnitAres],
-           [DDUnitDetails unitWithDisplayName:@"Barn" symbol:@"b" unit:DDAreaUnitBarns],
-           [DDUnitDetails unitWithDisplayName:@"Rood" symbol:@"rood" unit:DDAreaUnitRoods],
-           [DDUnitDetails unitWithDisplayName:@"Square Kilometer" symbol:@"km²" unit:DDAreaUnitSquareKilometers],
-           [DDUnitDetails unitWithDisplayName:@"Square Meter" symbol:@"m²" unit:DDAreaUnitSquareMeters],
-           [DDUnitDetails unitWithDisplayName:@"Square Decimeter" symbol:@"dm²" unit:DDAreaUnitSquareDecimeters],
-           [DDUnitDetails unitWithDisplayName:@"Square Centimeter" symbol:@"cm²" unit:DDAreaUnitSquareCentimeters],
-           [DDUnitDetails unitWithDisplayName:@"Square Milimeter" symbol:@"mm²" unit:DDAreaUnitSquareMillimeters],
-           [DDUnitDetails unitWithDisplayName:@"Square Mile" symbol:@"mile²" unit:DDAreaUnitSquareMiles],
-           [DDUnitDetails unitWithDisplayName:@"Square Yard" symbol:@"yd²" unit:DDAreaUnitSquareYards],
-           [DDUnitDetails unitWithDisplayName:@"Square Feet" symbol:@"ft²" unit:DDAreaUnitSquareFeet],
-           [DDUnitDetails unitWithDisplayName:@"Square Inch" symbol:@"in²" unit:DDAreaUnitSquareInches],
-           [DDUnitDetails unitWithDisplayName:@"Square Rod" symbol:@"rod²" unit:DDAreaUntiSquareRods]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Hectare" symbol:@"ha" unit:DDAreaUnitHectares],
+           [DDUnitDetails newUnitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres],
+           [DDUnitDetails newUnitWithDisplayName:@"Are" symbol:@"a" unit:DDAreaUnitAres],
+           [DDUnitDetails newUnitWithDisplayName:@"Barn" symbol:@"b" unit:DDAreaUnitBarns],
+           [DDUnitDetails newUnitWithDisplayName:@"Rood" symbol:@"rood" unit:DDAreaUnitRoods],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Kilometer" symbol:@"km²" unit:DDAreaUnitSquareKilometers],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Meter" symbol:@"m²" unit:DDAreaUnitSquareMeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Decimeter" symbol:@"dm²" unit:DDAreaUnitSquareDecimeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Centimeter" symbol:@"cm²" unit:DDAreaUnitSquareCentimeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Milimeter" symbol:@"mm²" unit:DDAreaUnitSquareMillimeters],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Mile" symbol:@"mile²" unit:DDAreaUnitSquareMiles],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Yard" symbol:@"yd²" unit:DDAreaUnitSquareYards],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Feet" symbol:@"ft²" unit:DDAreaUnitSquareFeet],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Inch" symbol:@"in²" unit:DDAreaUnitSquareInches],
+           [DDUnitDetails newUnitWithDisplayName:@"Square Rod" symbol:@"rod²" unit:DDAreaUntiSquareRods]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

@@ -35,27 +35,6 @@
 	return valueInTargetUnit;
 }
 
-+ (NSArray *)newConvertersList {
-  return @[[DDUnitConverter newAngleUnitConverter],
-           [DDUnitConverter newLengthUnitConverter],
-           [DDUnitConverter newAreaUnitConverter],
-           [DDUnitConverter newByteUnitConverter],
-           [DDUnitConverter newCurrentUnitConverter],
-           [DDUnitConverter newEnergyUnitConverter],
-           [DDUnitConverter newForceUnitConverter],
-           [DDUnitConverter newIlluminationUnitConverter],
-           [DDUnitConverter newMagnitudeUnitConverter],
-           [DDUnitConverter newPowerUnitConverter],
-           [DDUnitConverter newPressureUnitConverter],
-           [DDUnitConverter newRadiationUnitConverter],
-           [DDUnitConverter newTemperatureUnitConverter],
-           [DDUnitConverter newVelocityUnitConverter],
-           [DDUnitConverter newTimeUnitConverter],
-           [DDUnitConverter newTorqueUnitConverter],
-           [DDUnitConverter newVolumeUnitConverter],
-           [DDUnitConverter newMassUnitConverter]];
-}
-
 - (NSArray<DDUnitDetails *> *)allUnitsList {
   [NSException raise:NSInvalidArgumentException
               format:@"%@ must be overridden", NSStringFromSelector(_cmd)];

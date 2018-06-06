@@ -24,9 +24,9 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Becquerel" symbol:@"Bq" unit:DDRadiationUnitBecquerels],
-           [DDUnitDetails unitWithDisplayName:@"Curie" symbol:@"Ci" unit:DDRadiationUnitCuries],
-           [DDUnitDetails unitWithDisplayName:@"Rutherford" symbol:@"Rd" unit:DDRadiationUnitRutherfords]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Becquerel" symbol:@"Bq" unit:DDRadiationUnitBecquerels],
+           [DDUnitDetails newUnitWithDisplayName:@"Curie" symbol:@"Ci" unit:DDRadiationUnitCuries],
+           [DDUnitDetails newUnitWithDisplayName:@"Rutherford" symbol:@"Rd" unit:DDRadiationUnitRutherfords]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

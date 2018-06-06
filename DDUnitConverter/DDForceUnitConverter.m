@@ -27,19 +27,19 @@
 - (NSArray<DDUnitDetails *> *)allUnitsList {
   
   
-  return @[[DDUnitDetails unitWithDisplayName:@"Dyne" symbol:@"dyn" unit:DDForceUnitDynes],
-           [DDUnitDetails unitWithDisplayName:@"Kg Force | Kilopond" symbol:@"kgf" unit:DDForceUnitKilogramForces],
-           [DDUnitDetails unitWithDisplayName:@"Newton" symbol:@"N" unit:DDForceUnitNewtons],
-           [DDUnitDetails unitWithDisplayName:@"Kilonewton" symbol:@"kN" unit:DDForceUnitKiloNewtons],
-           [DDUnitDetails unitWithDisplayName:@"Poundal" symbol:@"pdl" unit:DDForceUnitPoundals],
-           [DDUnitDetails unitWithDisplayName:@"Pound Force" symbol:@"lbf" unit:DDForceUnitPoundForces],
-           [DDUnitDetails unitWithDisplayName:@"Sthene" symbol:@"" unit:DDForceUnitSthenes],
-           [DDUnitDetails unitWithDisplayName:@"Millinewton" symbol:@"mN" unit:DDForceUnitMiliNewtons],
-           [DDUnitDetails unitWithDisplayName:@"Micronewton" symbol:@"μN" unit:DDForceUnitMicroNewtons],
-           [DDUnitDetails unitWithDisplayName:@"Kip" symbol:@"" unit:DDForceUnitKip],
-           [DDUnitDetails unitWithDisplayName:@"Atomic Weight" symbol:@"" unit:DDForceUnitAtomicWeight],
-           [DDUnitDetails unitWithDisplayName:@"Ton Of Force" symbol:@"tnf" unit:DDForceUnitTonOfForce],
-           [DDUnitDetails unitWithDisplayName:@"Ounce Force" symbol:@"ozf" unit:DDForceUnitOunceForce],];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Dyne" symbol:@"dyn" unit:DDForceUnitDynes],
+           [DDUnitDetails newUnitWithDisplayName:@"Kg Force | Kilopond" symbol:@"kgf" unit:DDForceUnitKilogramForces],
+           [DDUnitDetails newUnitWithDisplayName:@"Newton" symbol:@"N" unit:DDForceUnitNewtons],
+           [DDUnitDetails newUnitWithDisplayName:@"Kilonewton" symbol:@"kN" unit:DDForceUnitKiloNewtons],
+           [DDUnitDetails newUnitWithDisplayName:@"Poundal" symbol:@"pdl" unit:DDForceUnitPoundals],
+           [DDUnitDetails newUnitWithDisplayName:@"Pound Force" symbol:@"lbf" unit:DDForceUnitPoundForces],
+           [DDUnitDetails newUnitWithDisplayName:@"Sthene" symbol:@"" unit:DDForceUnitSthenes],
+           [DDUnitDetails newUnitWithDisplayName:@"Millinewton" symbol:@"mN" unit:DDForceUnitMiliNewtons],
+           [DDUnitDetails newUnitWithDisplayName:@"Micronewton" symbol:@"μN" unit:DDForceUnitMicroNewtons],
+           [DDUnitDetails newUnitWithDisplayName:@"Kip" symbol:@"" unit:DDForceUnitKip],
+           [DDUnitDetails newUnitWithDisplayName:@"Atomic Weight" symbol:@"" unit:DDForceUnitAtomicWeight],
+           [DDUnitDetails newUnitWithDisplayName:@"Ton Of Force" symbol:@"tnf" unit:DDForceUnitTonOfForce],
+           [DDUnitDetails newUnitWithDisplayName:@"Ounce Force" symbol:@"ozf" unit:DDForceUnitOunceForce],];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

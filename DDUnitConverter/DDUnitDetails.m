@@ -15,9 +15,9 @@
 
 @implementation DDUnitDetails
 
-+ (instancetype)unitWithDisplayName:(NSString *)displayName
-                             symbol:(NSString *)symbol
-                               unit:(DDUnit)unit {
++ (instancetype)newUnitWithDisplayName:(NSString *)displayName
+                                symbol:(NSString *)symbol
+                                  unit:(DDUnit)unit {
   DDUnitDetails *unitDetails = [DDUnitDetails new];
   unitDetails.displayName = displayName;
   unitDetails.symbol = symbol;

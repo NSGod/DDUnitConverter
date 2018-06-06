@@ -24,27 +24,27 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Yocto" symbol:@"" unit:DDMagnitudeUnitYocto],
-           [DDUnitDetails unitWithDisplayName:@"Zepto" symbol:@"" unit:DDMagnitudeUnitZepto],
-           [DDUnitDetails unitWithDisplayName:@"Atto" symbol:@"" unit:DDMagnitudeUnitAtto],
-           [DDUnitDetails unitWithDisplayName:@"Femto" symbol:@"" unit:DDMagnitudeUnitFemto],
-           [DDUnitDetails unitWithDisplayName:@"Pico" symbol:@"" unit:DDMagnitudeUnitPico],
-           [DDUnitDetails unitWithDisplayName:@"Nano" symbol:@"" unit:DDMagnitudeUnitNano],
-           [DDUnitDetails unitWithDisplayName:@"Micro" symbol:@"" unit:DDMagnitudeUnitMicro],
-           [DDUnitDetails unitWithDisplayName:@"Milli" symbol:@"" unit:DDMagnitudeUnitMilli],
-           [DDUnitDetails unitWithDisplayName:@"Centi" symbol:@"" unit:DDMagnitudeUnitCenti],
-           [DDUnitDetails unitWithDisplayName:@"Deci" symbol:@"" unit:DDMagnitudeUnitDeci],
-           [DDUnitDetails unitWithDisplayName:@"Normal" symbol:@"" unit:DDMagnitudeUnitNormal],
-           [DDUnitDetails unitWithDisplayName:@"Deka" symbol:@"" unit:DDMagnitudeUnitDeka],
-           [DDUnitDetails unitWithDisplayName:@"Hecto" symbol:@"" unit:DDMagnitudeUnitHecto],
-           [DDUnitDetails unitWithDisplayName:@"Kilo" symbol:@"" unit:DDMagnitudeUnitKilo],
-           [DDUnitDetails unitWithDisplayName:@"Mega" symbol:@"" unit:DDMagnitudeUnitMega],
-           [DDUnitDetails unitWithDisplayName:@"Giga" symbol:@"" unit:DDMagnitudeUnitGiga],
-           [DDUnitDetails unitWithDisplayName:@"Tera" symbol:@"" unit:DDMagnitudeUnitTera],
-           [DDUnitDetails unitWithDisplayName:@"Peta" symbol:@"" unit:DDMagnitudeUnitPeta],
-           [DDUnitDetails unitWithDisplayName:@"Exa" symbol:@"" unit:DDMagnitudeUnitExa],
-           [DDUnitDetails unitWithDisplayName:@"Zetta" symbol:@"" unit:DDMagnitudeUnitZetta],
-           [DDUnitDetails unitWithDisplayName:@"Yotta" symbol:@"" unit:DDMagnitudeUnitYotta]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Yocto" symbol:@"" unit:DDMagnitudeUnitYocto],
+           [DDUnitDetails newUnitWithDisplayName:@"Zepto" symbol:@"" unit:DDMagnitudeUnitZepto],
+           [DDUnitDetails newUnitWithDisplayName:@"Atto" symbol:@"" unit:DDMagnitudeUnitAtto],
+           [DDUnitDetails newUnitWithDisplayName:@"Femto" symbol:@"" unit:DDMagnitudeUnitFemto],
+           [DDUnitDetails newUnitWithDisplayName:@"Pico" symbol:@"" unit:DDMagnitudeUnitPico],
+           [DDUnitDetails newUnitWithDisplayName:@"Nano" symbol:@"" unit:DDMagnitudeUnitNano],
+           [DDUnitDetails newUnitWithDisplayName:@"Micro" symbol:@"" unit:DDMagnitudeUnitMicro],
+           [DDUnitDetails newUnitWithDisplayName:@"Milli" symbol:@"" unit:DDMagnitudeUnitMilli],
+           [DDUnitDetails newUnitWithDisplayName:@"Centi" symbol:@"" unit:DDMagnitudeUnitCenti],
+           [DDUnitDetails newUnitWithDisplayName:@"Deci" symbol:@"" unit:DDMagnitudeUnitDeci],
+           [DDUnitDetails newUnitWithDisplayName:@"Normal" symbol:@"" unit:DDMagnitudeUnitNormal],
+           [DDUnitDetails newUnitWithDisplayName:@"Deka" symbol:@"" unit:DDMagnitudeUnitDeka],
+           [DDUnitDetails newUnitWithDisplayName:@"Hecto" symbol:@"" unit:DDMagnitudeUnitHecto],
+           [DDUnitDetails newUnitWithDisplayName:@"Kilo" symbol:@"" unit:DDMagnitudeUnitKilo],
+           [DDUnitDetails newUnitWithDisplayName:@"Mega" symbol:@"" unit:DDMagnitudeUnitMega],
+           [DDUnitDetails newUnitWithDisplayName:@"Giga" symbol:@"" unit:DDMagnitudeUnitGiga],
+           [DDUnitDetails newUnitWithDisplayName:@"Tera" symbol:@"" unit:DDMagnitudeUnitTera],
+           [DDUnitDetails newUnitWithDisplayName:@"Peta" symbol:@"" unit:DDMagnitudeUnitPeta],
+           [DDUnitDetails newUnitWithDisplayName:@"Exa" symbol:@"" unit:DDMagnitudeUnitExa],
+           [DDUnitDetails newUnitWithDisplayName:@"Zetta" symbol:@"" unit:DDMagnitudeUnitZetta],
+           [DDUnitDetails newUnitWithDisplayName:@"Yotta" symbol:@"" unit:DDMagnitudeUnitYotta]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

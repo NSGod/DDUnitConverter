@@ -24,18 +24,18 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Atmosphere" symbol:@"atm" unit:DDPressureUnitAtmospheres],
-           [DDUnitDetails unitWithDisplayName:@"Barie" symbol:@"barye" unit:DDPressureUnitBarie],
-           [DDUnitDetails unitWithDisplayName:@"Bar" symbol:@"bar" unit:DDPressureUnitBars],
-           [DDUnitDetails unitWithDisplayName:@"Inch of Mercury" symbol:@"inHg" unit:DDPressureUnitInchesOfMercury],
-           [DDUnitDetails unitWithDisplayName:@"Inch of Water" symbol:@"H₂O" unit:DDPressureUnitInchesOfWater],
-           [DDUnitDetails unitWithDisplayName:@"Millimeter of Mercury" symbol:@"mmHg" unit:DDPressureUnitMillimetersOfMercury],
-           [DDUnitDetails unitWithDisplayName:@"Torr" symbol:@"" unit:DDPressureUnitTorrs],
-           [DDUnitDetails unitWithDisplayName:@"Newton Per Square Meter" symbol:@"M/m²" unit:DDPressureUnitNewtonsPerSquareMeter],
-           [DDUnitDetails unitWithDisplayName:@"Pascal" symbol:@"Pa" unit:DDPressureUnitPascals],
-           [DDUnitDetails unitWithDisplayName:@"Pieze" symbol:@"" unit:DDPressureUnitPieze],
-           [DDUnitDetails unitWithDisplayName:@"Pound Force Per Square Foot" symbol:@"lbf/ft²" unit:DDPressureUnitPoundForcesPerSquareFoot],
-           [DDUnitDetails unitWithDisplayName:@"Pound Force Per Square Inch" symbol:@"psi" unit:DDPressureUnitPoundForcesPerSquareInch]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Atmosphere" symbol:@"atm" unit:DDPressureUnitAtmospheres],
+           [DDUnitDetails newUnitWithDisplayName:@"Barie" symbol:@"barye" unit:DDPressureUnitBarie],
+           [DDUnitDetails newUnitWithDisplayName:@"Bar" symbol:@"bar" unit:DDPressureUnitBars],
+           [DDUnitDetails newUnitWithDisplayName:@"Inch of Mercury" symbol:@"inHg" unit:DDPressureUnitInchesOfMercury],
+           [DDUnitDetails newUnitWithDisplayName:@"Inch of Water" symbol:@"H₂O" unit:DDPressureUnitInchesOfWater],
+           [DDUnitDetails newUnitWithDisplayName:@"Millimeter of Mercury" symbol:@"mmHg" unit:DDPressureUnitMillimetersOfMercury],
+           [DDUnitDetails newUnitWithDisplayName:@"Torr" symbol:@"" unit:DDPressureUnitTorrs],
+           [DDUnitDetails newUnitWithDisplayName:@"Newton Per Square Meter" symbol:@"M/m²" unit:DDPressureUnitNewtonsPerSquareMeter],
+           [DDUnitDetails newUnitWithDisplayName:@"Pascal" symbol:@"Pa" unit:DDPressureUnitPascals],
+           [DDUnitDetails newUnitWithDisplayName:@"Pieze" symbol:@"" unit:DDPressureUnitPieze],
+           [DDUnitDetails newUnitWithDisplayName:@"Pound Force Per Square Foot" symbol:@"lbf/ft²" unit:DDPressureUnitPoundForcesPerSquareFoot],
+           [DDUnitDetails newUnitWithDisplayName:@"Pound Force Per Square Inch" symbol:@"psi" unit:DDPressureUnitPoundForcesPerSquareInch]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {

@@ -15,8 +15,8 @@ typedef NSInteger DDUnit;
 @property (nonatomic, copy) NSString *symbol;
 - (DDUnit)unit;
 
-+ (instancetype)unitWithDisplayName:(NSString *)displayName
-                             symbol:(NSString *)symbol
-                               unit:(DDUnit)unit;
++ (instancetype)newUnitWithDisplayName:(NSString *)displayName
+                                symbol:(NSString *)symbol
+                                  unit:(DDUnit)unit;
 
 @end

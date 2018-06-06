@@ -24,11 +24,11 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Celcius" symbol:@"°C" unit:DDTemperatureUnitCelcius],
-           [DDUnitDetails unitWithDisplayName:@"Farenheit" symbol:@"°F" unit:DDTemperatureUnitFarenheit],
-           [DDUnitDetails unitWithDisplayName:@"Kelvin" symbol:@"K" unit:DDTemperatureUnitKelvin],
-           [DDUnitDetails unitWithDisplayName:@"Reaumur" symbol:@"°Ré | °Re | °r" unit:DDTemperatureUnitReaumur],
-           [DDUnitDetails unitWithDisplayName:@"Rankine" symbol:@"°R" unit:DDTemperatureUnitRankine]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Celcius" symbol:@"°C" unit:DDTemperatureUnitCelcius],
+           [DDUnitDetails newUnitWithDisplayName:@"Farenheit" symbol:@"°F" unit:DDTemperatureUnitFarenheit],
+           [DDUnitDetails newUnitWithDisplayName:@"Kelvin" symbol:@"K" unit:DDTemperatureUnitKelvin],
+           [DDUnitDetails newUnitWithDisplayName:@"Reaumur" symbol:@"°Ré | °Re | °r" unit:DDTemperatureUnitReaumur],
+           [DDUnitDetails newUnitWithDisplayName:@"Rankine" symbol:@"°R" unit:DDTemperatureUnitRankine]];
 }
 
 - (NSNumber *) convertNumber:(NSNumber *)number fromUnit:(DDUnit)from toUnit:(DDUnit)to {

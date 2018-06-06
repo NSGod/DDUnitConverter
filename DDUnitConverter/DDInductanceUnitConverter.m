@@ -24,11 +24,11 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
-  return @[[DDUnitDetails unitWithDisplayName:@"Electromagnetic Unit" symbol:@"" unit:DDInductanceUnitElectromagneticUnits],
-           [DDUnitDetails unitWithDisplayName:@"Electrostatic Units" symbol:@"" unit:DDInductanceUnitElectrostaticUnits],
-           [DDUnitDetails unitWithDisplayName:@"Henrys" symbol:@"H" unit:DDInductanceUnitHenrys],
-           [DDUnitDetails unitWithDisplayName:@"Millihenrys" symbol:@"mH" unit:DDInductanceUnitMillihenrys],
-           [DDUnitDetails unitWithDisplayName:@"Microhenrys" symbol:@"μH" unit:DDInductanceUnitMicrohenrys]];
+  return @[[DDUnitDetails newUnitWithDisplayName:@"Electromagnetic Unit" symbol:@"" unit:DDInductanceUnitElectromagneticUnits],
+           [DDUnitDetails newUnitWithDisplayName:@"Electrostatic Units" symbol:@"" unit:DDInductanceUnitElectrostaticUnits],
+           [DDUnitDetails newUnitWithDisplayName:@"Henrys" symbol:@"H" unit:DDInductanceUnitHenrys],
+           [DDUnitDetails newUnitWithDisplayName:@"Millihenrys" symbol:@"mH" unit:DDInductanceUnitMillihenrys],
+           [DDUnitDetails newUnitWithDisplayName:@"Microhenrys" symbol:@"μH" unit:DDInductanceUnitMicrohenrys]];
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
