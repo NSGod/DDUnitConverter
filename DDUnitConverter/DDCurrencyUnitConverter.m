@@ -115,7 +115,6 @@ static NSMutableDictionary *_DDCurrencyExchangeRates = nil;
         
         if (parsingExchangeRateSection == YES && [line hasPrefix:@"Currency"]) {
             // we've reached the end of the exchange rate section, so we're done parsing
-            parsingExchangeRateSection = NO;
             break;
         }
         
