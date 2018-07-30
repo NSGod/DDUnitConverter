@@ -20,7 +20,7 @@
 
 @implementation DDEnergyUnitConverter
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Calorie" symbol:@"cal" unit:DDEnergyUnitCalories],
            [DDUnitDetails newUnitWithDisplayName:@"Electron Volt" symbol:@"eV" unit:DDEnergyUnitElectronVolts],
            [DDUnitDetails newUnitWithDisplayName:@"Erg" symbol:@"erg" unit:DDEnergyUnitErgs],

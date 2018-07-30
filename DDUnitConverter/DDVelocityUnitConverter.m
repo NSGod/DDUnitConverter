@@ -24,7 +24,7 @@
   return NSLocalizedString(@"Speed/Velocity", @"Title for Velocity unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Centimeter Per Hour" symbol:@"cm/h" unit:DDVelocityUnitCentimetersPerHour],
            [DDUnitDetails newUnitWithDisplayName:@"Centimeter Per Minute" symbol:@"cm/m" unit:DDVelocityUnitCentimetersPerMinute],
            [DDUnitDetails newUnitWithDisplayName:@"Centimeter Per Second" symbol:@"cm/s" unit:DDVelocityUnitCentimetersPerSecond],

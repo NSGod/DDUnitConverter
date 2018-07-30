@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Time", @"Title for Time unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Blink" symbol:@"" unit:DDTimeUnitBlinks],
            [DDUnitDetails newUnitWithDisplayName:@"Century" symbol:@"" unit:DDTimeUnitCenturies],
            [DDUnitDetails newUnitWithDisplayName:@"Cesium 133" symbol:@"" unit:DDTimeUnitCesium133],

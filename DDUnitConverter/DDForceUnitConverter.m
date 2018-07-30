@@ -24,9 +24,7 @@
   return NSLocalizedString(@"Force", @"Title for Force unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
-  
-  
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Dyne" symbol:@"dyn" unit:DDForceUnitDynes],
            [DDUnitDetails newUnitWithDisplayName:@"Kg Force | Kilopond" symbol:@"kgf" unit:DDForceUnitKilogramForces],
            [DDUnitDetails newUnitWithDisplayName:@"Newton" symbol:@"N" unit:DDForceUnitNewtons],

@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Area", @"Title for Area unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Hectare" symbol:@"ha" unit:DDAreaUnitHectares],
            [DDUnitDetails newUnitWithDisplayName:@"Acre" symbol:@"acre" unit:DDAreaUnitAcres],
            [DDUnitDetails newUnitWithDisplayName:@"Are" symbol:@"a" unit:DDAreaUnitAres],

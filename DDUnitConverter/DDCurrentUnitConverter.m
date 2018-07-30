@@ -19,7 +19,7 @@
 
 @implementation DDCurrentUnitConverter
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Ampere" symbol:@"A" unit:DDCurrentUnitAmperes],
            [DDUnitDetails newUnitWithDisplayName:@"ElectromagneticUnit" symbol:@"" unit:DDCurrentUnitElectromagneticUnits],
            [DDUnitDetails newUnitWithDisplayName:@"Kiloampere" symbol:@"kA" unit:DDCurrentUnitKiloamperes],

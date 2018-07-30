@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Magnitude", @"Title for Magnitude unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Yocto" symbol:@"" unit:DDMagnitudeUnitYocto],
            [DDUnitDetails newUnitWithDisplayName:@"Zepto" symbol:@"" unit:DDMagnitudeUnitZepto],
            [DDUnitDetails newUnitWithDisplayName:@"Atto" symbol:@"" unit:DDMagnitudeUnitAtto],

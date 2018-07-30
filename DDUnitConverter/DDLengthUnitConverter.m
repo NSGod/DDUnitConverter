@@ -22,7 +22,7 @@
   return NSLocalizedString(@"Length", @"Title for Length unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Meter" symbol:@"m" unit:DDLengthUnitMeters],
            [DDUnitDetails newUnitWithDisplayName:@"Centimeter" symbol:@"cm" unit:DDLengthUnitCentimeters],
            [DDUnitDetails newUnitWithDisplayName:@"Kilometer" symbol:@"km" unit:DDLengthUnitKilometers],

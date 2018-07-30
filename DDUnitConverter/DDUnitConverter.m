@@ -9,6 +9,12 @@
 #import "DDUnitConverter.h"
 #import "DDUnitConversion.h"
 
+@interface DDUnitConverter ()
+
+@property (nonatomic) NSArray<DDUnitDetails *> *unitsList;
+
+@end
+
 @implementation DDUnitConverter
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
@@ -36,6 +42,13 @@
 }
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
+  if (self.unitsList == nil) {
+    self.unitsList = [self allUnitsListInternal];
+  }
+  return self.unitsList;
+}
+
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   [NSException raise:NSInvalidArgumentException
               format:@"%@ must be overridden", NSStringFromSelector(_cmd)];
   return nil;

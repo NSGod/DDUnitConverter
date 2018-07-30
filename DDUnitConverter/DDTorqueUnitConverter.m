@@ -24,7 +24,7 @@
   return NSLocalizedString(@"Torque", @"Title for Torque unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Dyne Centimeter" symbol:@"" unit:DDTorqueUnitDyneCentimeters],
            [DDUnitDetails newUnitWithDisplayName:@"Gram Force Centimeter" symbol:@"" unit:DDTorqueUnitGramForceCentimeters],
            [DDUnitDetails newUnitWithDisplayName:@"Kg Force Centimeter" symbol:@"kgf.cm" unit:DDTorqueUnitKilogramForceCentimeters],

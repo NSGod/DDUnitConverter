@@ -19,7 +19,7 @@
 
 @implementation DDIlluminationUnitConverter
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Foot Candle" symbol:@"fc" unit:DDIlluminationUnitFootCandles],
            [DDUnitDetails newUnitWithDisplayName:@"Lumen Per Square Meter" symbol:@"lm/m²" unit:DDIlluminationUnitLumensPerSquareMeter],
            [DDUnitDetails newUnitWithDisplayName:@"Lumen Per Square Foot" symbol:@"lm/ft²" unit:DDIlluminationUnitLumensPerSquareFoot],

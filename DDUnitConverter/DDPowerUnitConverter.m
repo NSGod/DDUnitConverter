@@ -24,7 +24,7 @@
   return NSLocalizedString(@"Power", @"Title for Power unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Calorie Per Second" symbol:@"cal/s" unit:DDPowerUnitCaloriePerSecond],
            [DDUnitDetails newUnitWithDisplayName:@"Foot Pound Force Per Second" symbol:@"lbf/s" unit:DDPowerUnitFootPoundForcesPerSecond],
            [DDUnitDetails newUnitWithDisplayName:@"Horsepower" symbol:@"hp" unit:DDPowerUnitHorsepower],

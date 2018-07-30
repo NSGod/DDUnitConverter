@@ -19,7 +19,7 @@
 
 @implementation DDByteUnitConverter
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Bit" symbol:@"b" unit:DDByteUnitBit],
            [DDUnitDetails newUnitWithDisplayName:@"Crumb" symbol:@"crumb" unit:DDByteUnitCrumb],
            [DDUnitDetails newUnitWithDisplayName:@"Nibble" symbol:@"nibble" unit:DDByteUnitNibble],

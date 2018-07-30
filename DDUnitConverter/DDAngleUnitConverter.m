@@ -20,7 +20,7 @@
 
 @implementation DDAngleUnitConverter
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Circle" symbol:@"circle" unit:DDAngleUnitCircles],
            [DDUnitDetails newUnitWithDisplayName:@"Degree" symbol:@"°" unit:DDAngleUnitDegrees],
            [DDUnitDetails newUnitWithDisplayName:@"Gon" symbol:@"g" unit:DDAngleUnitGons],

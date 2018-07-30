@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Weight", @"Title for Mass unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Atomic Mass Unit" symbol:@"u" unit:DDMassUnitAtomicMassUnits],
            [DDUnitDetails newUnitWithDisplayName:@"Dalton" symbol:@"Da" unit:DDMassUnitDaltons],
            [DDUnitDetails newUnitWithDisplayName:@"Drachm" symbol:@"" unit:DDMassUnitDrachms],

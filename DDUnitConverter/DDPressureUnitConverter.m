@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Pressure", @"Title for Pressure unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Atmosphere" symbol:@"atm" unit:DDPressureUnitAtmospheres],
            [DDUnitDetails newUnitWithDisplayName:@"Barie" symbol:@"barye" unit:DDPressureUnitBarie],
            [DDUnitDetails newUnitWithDisplayName:@"Bar" symbol:@"bar" unit:DDPressureUnitBars],

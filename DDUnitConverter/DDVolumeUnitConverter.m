@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Volume", @"Title for Volume unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Barrel (Dry)" symbol:@"" unit:DDVolumeUnitDryBarrels],
            [DDUnitDetails newUnitWithDisplayName:@"Barrel (Liquid)" symbol:@"" unit:DDVolumeUnitLiquidBarrels],
            [DDUnitDetails newUnitWithDisplayName:@"Bushel (UK)" symbol:@"bu" unit:DDVolumeUnitUKBushels],

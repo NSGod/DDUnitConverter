@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Radiation", @"Title for Radiation unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Becquerel" symbol:@"Bq" unit:DDRadiationUnitBecquerels],
            [DDUnitDetails newUnitWithDisplayName:@"Curie" symbol:@"Ci" unit:DDRadiationUnitCuries],
            [DDUnitDetails newUnitWithDisplayName:@"Rutherford" symbol:@"Rd" unit:DDRadiationUnitRutherfords]];

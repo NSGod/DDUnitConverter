@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Inductance", @"Title for Inductance unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Electromagnetic Unit" symbol:@"" unit:DDInductanceUnitElectromagneticUnits],
            [DDUnitDetails newUnitWithDisplayName:@"Electrostatic Units" symbol:@"" unit:DDInductanceUnitElectrostaticUnits],
            [DDUnitDetails newUnitWithDisplayName:@"Henrys" symbol:@"H" unit:DDInductanceUnitHenrys],

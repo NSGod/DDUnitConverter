@@ -23,7 +23,7 @@
   return NSLocalizedString(@"Temperature", @"Title for Temperature unit converter");
 }
 
-- (NSArray<DDUnitDetails *> *)allUnitsList {
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
   return @[[DDUnitDetails newUnitWithDisplayName:@"Celcius" symbol:@"°C" unit:DDTemperatureUnitCelcius],
            [DDUnitDetails newUnitWithDisplayName:@"Farenheit" symbol:@"°F" unit:DDTemperatureUnitFarenheit],
            [DDUnitDetails newUnitWithDisplayName:@"Kelvin" symbol:@"K" unit:DDTemperatureUnitKelvin],
