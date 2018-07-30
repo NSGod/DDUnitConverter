@@ -11,7 +11,7 @@
 
 @interface DDUnitConverter ()
 
-@property (nonatomic) NSArray<DDUnitDetails *> *unitsList;
+@property (nonatomic, copy) NSArray<DDUnitDetails *> *unitsList;
 
 @end
 
