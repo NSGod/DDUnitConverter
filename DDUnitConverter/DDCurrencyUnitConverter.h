@@ -77,7 +77,8 @@ typedef NS_ENUM(NSInteger, DDCurrencyUnit) {
 	DDCurrencyUnitUAEDirham,
 	DDCurrencyUnitPesoUruguayo,
 	DDCurrencyUnitBolivarFuerte,
-	DDCurrencyUnitSDR
+	DDCurrencyUnitSDR,
+    DDCurrencyUnitCount
 };
 
 @interface DDCurrencyUnitConverter : DDUnitConverter

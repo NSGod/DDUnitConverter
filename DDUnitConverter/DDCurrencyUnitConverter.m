@@ -216,6 +216,18 @@ static NSString *_DDCurrencyNames[] = {
 
 @implementation DDCurrencyUnitConverter
 
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal {
+    NSMutableArray *list = [@[] mutableCopy];
+    
+    for (DDCurrencyUnit unit = 0; unit < DDCurrencyUnitCount; unit++) {
+        NSString *unitName = [[self class] nameOfCurrencyUnit:unit];
+        DDUnitDetails *unitDetails = [DDUnitDetails newUnitWithDisplayName:unitName symbol:@"" unit:unit];
+        [list addObject:unitDetails];
+    }
+    
+    return list;
+}
+
 + (NSString *)nameOfCurrencyUnit:(DDCurrencyUnit)unit {
     if (unit > DDCurrencyUnitSDR) { return nil; }
     return _DDCurrencyNames[unit];
