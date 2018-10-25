@@ -109,9 +109,11 @@ static NSMutableArray *_DDCurrencyNames = nil;
     for (NSString *line in lines) {
         if (line.length == 0) { continue; }
         
-        if (parsingExchangeRateSection == NO && [line hasPrefix:@"Currency"]) {
-            // A row starting with "Currency" is how we find the start of the exchange rate section
-            parsingExchangeRateSection = YES;
+        if (parsingExchangeRateSection == NO ) {
+            if ([line hasPrefix:@"Currency"]) {
+                // A row starting with "Currency" is how we find the start of the exchange rate section
+                parsingExchangeRateSection = YES;
+            }
             continue;
         }
         
