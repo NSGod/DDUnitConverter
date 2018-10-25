@@ -132,6 +132,10 @@ static NSMutableArray *_DDCurrencyNames = nil;
                 break;
             }
         }
+        
+        if (conversionValue - 0.0 <= 0.0000001 ) {
+            continue;
+        }
         _DDCurrencyExchangeRates[currencyName] = @(conversionValue);
     }
     
