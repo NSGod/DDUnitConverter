@@ -138,7 +138,7 @@ static NSMutableArray *_DDCurrencyNames = nil;
         if (conversionValue - 0.0 <= 0.0000001 ) {
             continue;
         }
-        _DDCurrencyExchangeRates[currencyName] = @(conversionValue);
+        _DDCurrencyExchangeRates[currencyName] = [NSDecimalNumber decimalNumberWithDecimal:@(conversionValue).decimalValue];
     }
     
     [self _onqueue_performCallbacks:nil];
