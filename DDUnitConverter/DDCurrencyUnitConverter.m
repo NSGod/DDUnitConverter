@@ -16,6 +16,8 @@ static NSMutableArray *_DDCurrencyNames = nil;
 
 @interface DDCurrencyFetcher : NSObject
 
+@property (nonatomic, strong) NSMutableArray *pendingHandlers;
+
 + (instancetype)sharedCurrencyFetcher;
 
 - (void)fetchWithCompletionHandler:(void(^)(NSError *error))handler;
@@ -26,7 +28,6 @@ static NSMutableArray *_DDCurrencyNames = nil;
 @implementation DDCurrencyFetcher {
     BOOL _currentlyFetching;
     dispatch_queue_t _fetchQueue;
-    NSMutableArray *_pendingHandlers;
 }
 
 + (instancetype)sharedCurrencyFetcher {
@@ -41,7 +42,7 @@ static NSMutableArray *_DDCurrencyNames = nil;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _pendingHandlers = [NSMutableArray array];
+        _pendingHandlers =[@[] mutableCopy];
         _fetchQueue = dispatch_queue_create("com.davedelong.currencyFetcher", DISPATCH_QUEUE_SERIAL);
     }
     return self;
@@ -50,7 +51,7 @@ static NSMutableArray *_DDCurrencyNames = nil;
 - (void)fetchWithCompletionHandler:(void (^)(NSError *))handler {
     dispatch_async(_fetchQueue, ^{
         if (handler != nil) {
-            [_pendingHandlers addObject:[handler copy]];
+            [self.pendingHandlers addObject:[handler copy]];
         }
         
         if (_currentlyFetching == NO) {
@@ -138,8 +139,8 @@ static NSMutableArray *_DDCurrencyNames = nil;
 }
 
 - (void)_onqueue_performCallbacks:(NSError *)error {
-    NSArray *handlers = [_pendingHandlers copy];
-    [_pendingHandlers removeAllObjects];
+    NSArray *handlers = [self.pendingHandlers copy];
+    [self.pendingHandlers removeAllObjects];
     
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
         for (void(^handler)(NSError *) in handlers) {
