@@ -12,6 +12,7 @@
 NSString * const DDHTTPErrorDomain = @"DDHTTPErrorDomain";
 NSString * const DDHTTPResponseKey = @"DDHTTPResponseKey";
 static NSMutableDictionary *_DDCurrencyExchangeRates = nil;
+static NSMutableArray *_DDCurrencyNames = nil;
 
 @interface DDCurrencyFetcher : NSObject
 
@@ -149,62 +150,6 @@ static NSMutableDictionary *_DDCurrencyExchangeRates = nil;
 
 @end
 
-static NSString *_DDCurrencyNames[] = {
-    @"Euro",
-    @"Japanese Yen",
-    @"U.K. Pound Sterling",
-    @"U.S. Dollar",
-    @"Algerian Dinar",
-    @"Argentine Peso",
-    @"Australian Dollar",
-    @"Bahrain Dinar",
-    @"Botswana Pula",
-    @"Brazilian Real",
-    @"Brunei Dollar",
-    @"Canadian Dollar",
-    @"Chilean Peso",
-    @"Chinese Yuan",
-    @"Colombian Peso",
-    @"Czech Koruna",
-    @"Danish Krone",
-    @"Hungarian Forint",
-    @"Icelandic Krona",
-    @"Indian Rupee",
-    @"Indonesian Rupiah",
-    @"Iranian Rial",
-    @"Israeli New Sheqel",
-    @"Kazakhstani Tenge",
-    @"Korean Won",
-    @"Kuwaiti Dinar",
-    @"Libyan Dinar",
-    @"Malaysian Ringgit",
-    @"Mauritian Rupee",
-    @"Mexican Peso",
-    @"Nepalese Rupee",
-    @"New Zealand Dollar",
-    @"Norwegian Krone",
-    @"Rial Omani",
-    @"Pakistani Rupee",
-    @"Nuevo Sol",
-    @"Philippine Peso",
-    @"Polish Zloty",
-    @"Qatar Riyal",
-    @"Russian Ruble",
-    @"Saudi Arabian Riyal",
-    @"Singapore Dollar",
-    @"South African Rand",
-    @"Sri Lanka Rupee",
-    @"Swedish Krona",
-    @"Swiss Franc",
-    @"Thai Baht",
-    @"Trinidad And Tobago Dollar",
-    @"Tunisian Dinar",
-    @"U.A.E. Dirham",
-    @"Peso Uruguayo",
-    @"Bolivar Fuerte",
-    @"SDR"
-};
-
 @implementation DDUnitConverter (DDCurrencyUnitConverter)
 
 + (instancetype)newCurrencyUnitConverter {
@@ -218,24 +163,29 @@ static NSString *_DDCurrencyNames[] = {
 
 - (NSArray<DDUnitDetails *> *)allUnitsListInternal {
     NSMutableArray *list = [@[] mutableCopy];
+    DDCurrencyUnit unit= 0;
     
-    for (DDCurrencyUnit unit = 0; unit < DDCurrencyUnitCount; unit++) {
-        NSString *unitName = [[self class] nameOfCurrencyUnit:unit];
-        DDUnitDetails *unitDetails = [DDUnitDetails newUnitWithDisplayName:unitName symbol:@"" unit:unit];
+    NSArray *allCurrencies =
+    [_DDCurrencyExchangeRates.allKeys sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1, NSString * obj2) {
+        return [obj1 compare:obj2];
+    }];
+    
+    for (NSString *currencyName in allCurrencies) {
+        [_DDCurrencyNames addObject:currencyName];
+        DDUnitDetails *unitDetails = [DDUnitDetails newUnitWithDisplayName:currencyName
+                                                                    symbol:@""
+                                                                      unit:unit];
         [list addObject:unitDetails];
+        unit++;
     }
     
     return list;
 }
 
-+ (NSString *)nameOfCurrencyUnit:(DDCurrencyUnit)unit {
-    if (unit > DDCurrencyUnitSDR) { return nil; }
-    return _DDCurrencyNames[unit];
-}
-
 + (void)initialize {
 	if (self == [DDCurrencyUnitConverter class]) {
         _DDCurrencyExchangeRates = [[NSMutableDictionary alloc] init];
+        _DDCurrencyNames = [[NSMutableArray alloc] init];
         [[DDCurrencyFetcher sharedCurrencyFetcher] fetchWithCompletionHandler:nil];
 	}
 }
