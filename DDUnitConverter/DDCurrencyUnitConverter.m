@@ -154,7 +154,7 @@ static NSMutableArray *_DDCurrencyNames = nil;
 @implementation DDUnitConverter (DDCurrencyUnitConverter)
 
 + (instancetype)newCurrencyUnitConverter {
-	return [[DDCurrencyUnitConverter alloc] init];
+    return [[DDCurrencyUnitConverter alloc] init];
 }
 
 @end
@@ -184,24 +184,24 @@ static NSMutableArray *_DDCurrencyNames = nil;
 }
 
 + (void)initialize {
-	if (self == [DDCurrencyUnitConverter class]) {
+    if (self == [DDCurrencyUnitConverter class]) {
         _DDCurrencyExchangeRates = [[NSMutableDictionary alloc] init];
         _DDCurrencyNames = [[NSMutableArray alloc] init];
         [[DDCurrencyFetcher sharedCurrencyFetcher] fetchWithCompletionHandler:nil];
-	}
+    }
 }
 
 + (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit {
-	NSDecimalNumber *multiplier = [NSDecimalNumber one];
-	if (unit < DDCurrencyUnitSDR) {
+    NSDecimalNumber *multiplier = [NSDecimalNumber one];
+    if (unit < DDCurrencyUnitSDR) {
         NSString *name = _DDCurrencyNames[unit];
         multiplier = [_DDCurrencyExchangeRates objectForKey:name];
         if (multiplier == nil) {
             NSLog(@"unknown currency: %@ (%lu)", name, unit);
             multiplier = [NSDecimalNumber one];
         }
-	}
-	return multiplier;
+    }
+    return multiplier;
 }
 
 - (NSNumber *)convertNumber:(NSNumber *)number fromUnit:(DDUnit)from toUnit:(DDUnit)to {
@@ -218,7 +218,7 @@ static NSMutableArray *_DDCurrencyNames = nil;
 }
 
 - (NSString *)title {
-  return NSLocalizedString(@"Currency", @"Title for Currency unit converter");
+    return NSLocalizedString(@"Currency", @"Title for Currency unit converter");
 }
 
 @end
