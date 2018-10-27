@@ -43,7 +43,10 @@
 
 - (NSArray<DDUnitDetails *> *)allUnitsList {
   if (self.unitsList == nil) {
-    self.unitsList = [self allUnitsListInternal];
+    NSArray *allUnits = [self allUnitsListInternal];
+    if (allUnits.count > 0) {
+      self.unitsList = allUnits;
+    }
   }
   return self.unitsList;
 }
