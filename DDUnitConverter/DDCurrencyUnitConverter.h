@@ -78,13 +78,10 @@ typedef NS_ENUM(NSInteger, DDCurrencyUnit) {
 	DDCurrencyUnitPesoUruguayo,
 	DDCurrencyUnitBolivarFuerte,
 	DDCurrencyUnitSDR,
-    DDCurrencyUnitCount
+  DDCurrencyUnitCount
 };
 
 @interface DDCurrencyUnitConverter : DDUnitConverter
-
-//retrieve a displayable (english) name of the currency unit
-+ (NSString *)nameOfCurrencyUnit:(DDCurrencyUnit)unit;
 
 //refresh the exchange rates
 - (void)refreshExchangeRates;
