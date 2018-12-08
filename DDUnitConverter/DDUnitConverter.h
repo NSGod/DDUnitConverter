@@ -15,4 +15,10 @@
 - (NSArray<DDUnitDetails *> *)allUnitsList;
 - (NSString *)title;
 
+/**
+ This is put in header just so that it become visible swift subclasses for overriding.
+ This is not intended to be called publically.
+ **/
+- (NSArray<DDUnitDetails *> *)allUnitsListInternal;
+
 @end
