@@ -21,4 +21,10 @@
  **/
 - (NSArray<DDUnitDetails *> *)allUnitsListInternal;
 
+/**
+ This is put in header just so that it become visible swift subclasses for overriding.
+ This is not intended to be called publically.
+ **/
++ (NSDecimalNumber *)multiplierForUnit:(DDUnit)unit;
+
 @end
