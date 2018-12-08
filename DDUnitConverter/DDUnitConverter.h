@@ -31,6 +31,6 @@
  This method is used to give each unit converter a chance to update their units. This will be useful for
  converters which fetch units remote like currency converter.
  **/
-- (void)updateUnits;
+- (void)updateUnits:(void (^)(void))successBlock;
 
 @end

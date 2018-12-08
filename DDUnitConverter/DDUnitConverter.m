@@ -63,7 +63,7 @@
   return nil;
 }
 
-- (void)updateUnits {
+- (void)updateUnits:(void (^)(void))successBlock {
   // Nothing to do in base class. 
 }
 
