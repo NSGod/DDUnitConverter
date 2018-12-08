@@ -63,4 +63,8 @@
   return nil;
 }
 
+- (void)updateUnits {
+  // Nothing to do in base class. 
+}
+
 @end
